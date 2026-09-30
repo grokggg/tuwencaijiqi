@@ -1,0 +1,30 @@
+{
+  "description": "ZCCSA-Auto Token采集目标站点列表 - 用于自动逆向提取知乎合作方Token",
+  "search_keywords": [
+    "娇娇和她的忠犬小狗",
+    "知乎盐选",
+    "知乎付费",
+    "zhihu salt"
+  ],
+  "crack_sites": [
+    {
+      "name": "通用盐选解析站1",
+      "url": "https://www.baidu.com/s?wd=知乎盐选+在线阅读",
+      "type": "search_engine",
+      "search_selector": "input[name='wd']",
+      "network_listen": true
+    }
+  ],
+  "app_download_urls": {
+    "weread_apk": "https://android.myapp.com/myapp/detail.htm?apkName=com.tencent.weread",
+    "zhihu_apk": "https://android.myapp.com/myapp/detail.htm?apkName=com.zhihu.android"
+  },
+  "mini_program_repos": [
+    "https://github.com/search?q=weread+zhihu+%E5%B0%8F%E7%A8%8B%E5%BA%8F&type=repositories"
+  ],
+  "validation": {
+    "test_article_id": "1979959692122943787",
+    "test_column_id": "1979976139138147736",
+    "min_content_length_cn": 2000
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "share_engine": {
+    "success_count": 0,
+    "fail_count": 0,
+    "total_time": 0.0,
+    "last_success": 0.0,
+    "last_failure": 0.0,
+    "last_error": "",
+    "weight": 100
+  },
+  "cookie_pool_engine": {
+    "success_count": 0,
+    "fail_count": 0,
+    "total_time": 0.0,
+    "last_success": 0.0,
+    "last_failure": 0.0,
+    "last_error": "",
+    "weight": 80
+  },
+  "internal_api_engine": {
+    "success_count": 0,
+    "fail_count": 0,
+    "total_time": 0.0,
+    "last_success": 0.0,
+    "last_failure": 0.0,
+    "last_error": "",
+    "weight": 70
+  },
+  "cross_platform_engine": {
+    "success_count": 0,
+    "fail_count": 0,
+    "total_time": 0.0,
+    "last_success": 0.0,
+    "last_failure": 0.0,
+    "last_error": "",
+    "weight": 60
+  },
+  "cache_engine": {
+    "success_count": 0,
+    "fail_count": 0,
+    "total_time": 0.0,
+    "last_success": 0.0,
+    "last_failure": 0.0,
+    "last_error": "",
+    "weight": 50
+  },
+  "ocr_engine": {
+    "success_count": 0,
+    "fail_count": 0,
+    "total_time": 0.0,
+    "last_success": 0.0,
+    "last_failure": 0.0,
+    "last_error": "",
+    "weight": 20
+  },
+  "basic_http_engine": {
+    "success_count": 0,
+    "fail_count": 0,
+    "total_time": 0.0,
+    "last_success": 0.0,
+    "last_failure": 0.0,
+    "last_error": "",
+    "weight": 10
+  }
+}

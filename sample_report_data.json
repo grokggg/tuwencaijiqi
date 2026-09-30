@@ -1,0 +1,127 @@
+{
+  "title": "用户登录接口安全测试报告",
+  "date": "2026-08-04",
+  "tester": "张三",
+  "version": "v1.0",
+  "risk_level": "高危",
+  "target": {
+    "name": "用户认证服务",
+    "url": "https://api.example.com/v1/auth/login",
+    "type": "REST API (POST)",
+    "description": "本次测试针对用户登录接口 /v1/auth/login 进行安全评估。该接口接收用户名和密码，验证后返回 JWT Token。测试重点关注认证绕过、注入攻击、信息泄露等安全风险。"
+  },
+  "steps": [
+    {
+      "step": 1,
+      "name": "正常登录流程验证",
+      "action": "使用合法账号密码发送 POST 请求",
+      "expected": "返回 200 状态码和 JWT Token",
+      "result": "符合预期",
+      "status": "通过"
+    },
+    {
+      "step": 2,
+      "name": "SQL 注入测试",
+      "action": "在 username 字段注入 ' OR '1'='1",
+      "expected": "请求被拒绝，返回错误信息",
+      "result": "接口未对输入进行过滤，成功绕过认证",
+      "status": "失败"
+    },
+    {
+      "step": 3,
+      "name": "暴力破解防护测试",
+      "action": "连续发送 100 次错误密码请求",
+      "expected": "触发速率限制，返回 429 状态码",
+      "result": "前 50 次请求正常返回 401，第 51 次起返回 429",
+      "status": "通过"
+    },
+    {
+      "step": 4,
+      "name": "密码明文传输检查",
+      "action": "抓包检查登录请求是否加密传输密码",
+      "expected": "密码字段应经过前端加密或使用 HTTPS 传输",
+      "result": "HTTPS 已启用，但密码字段为明文，未做前端加密",
+      "status": "警告"
+    }
+  ],
+  "samples": [
+    {
+      "name": "正常登录请求",
+      "request": {
+        "method": "POST",
+        "url": "https://api.example.com/v1/auth/login",
+        "headers": {
+          "Content-Type": "application/json",
+          "User-Agent": "TestClient/1.0"
+        },
+        "body": {
+          "username": "testuser@example.com",
+          "password": "SecurePass123!"
+        }
+      },
+      "response": {
+        "status_code": 200,
+        "headers": {
+          "Content-Type": "application/json",
+          "Set-Cookie": "session=abc123; HttpOnly; Secure"
+        },
+        "body": {
+          "code": 0,
+          "message": "success",
+          "data": {
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+            "expires_in": 3600
+          }
+        }
+      }
+    },
+    {
+      "name": "SQL 注入请求",
+      "request": {
+        "method": "POST",
+        "url": "https://api.example.com/v1/auth/login",
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "username": "admin' OR '1'='1",
+          "password": "anything"
+        }
+      },
+      "response": {
+        "status_code": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "code": 0,
+          "message": "success",
+          "data": {
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+            "expires_in": 3600,
+            "user_id": 1,
+            "role": "admin"
+          }
+        }
+      }
+    }
+  ],
+  "conclusion": {
+    "summary": "本次测试共执行 4 项测试用例，其中 2 项通过、1 项失败、1 项警告。发现 1 个高危漏洞（SQL 注入导致认证绕过）和 1 个中危问题（密码明文传输）。建议在上线前修复 SQL 注入漏洞，并增加前端密码加密机制。",
+    "risk_assessment": {
+      "severity": "高危",
+      "severity_desc": "SQL 注入可导致任意账户登录，包括管理员账户",
+      "exploit_difficulty": "低",
+      "exploit_difficulty_desc": "使用标准 SQL 注入 Payload 即可利用，无需特殊工具",
+      "impact_scope": "全系统",
+      "impact_scope_desc": "攻击者可获取任意用户权限，影响所有用户数据"
+    },
+    "recommendations": [
+      "1. 对 username 和 password 字段实施严格的输入验证和参数化查询",
+      "2. 使用 WAF 规则拦截常见 SQL 注入 Payload",
+      "3. 前端密码字段使用 RSA 或 AES 加密后再传输",
+      "4. 登录接口增加验证码机制，防止自动化攻击",
+      "5. 定期进行安全扫描和渗透测试"
+    ]
+  }
+}

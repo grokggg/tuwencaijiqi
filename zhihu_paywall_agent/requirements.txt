@@ -1,0 +1,32 @@
+# 知乎盐选内容获取智能体 - 依赖清单
+# 安装: pip install -r requirements.txt
+
+# 核心HTTP客户端（TLS指纹伪装）
+curl_cffi>=0.6.0
+
+# 异步HTTP客户端（备用）
+httpx>=0.25.0
+
+# 浏览器自动化（分享引擎+OCR引擎）
+playwright>=1.40.0
+
+# HTML解析（快速）
+selectolax>=0.3.17
+
+# HTML转Markdown
+html2text>=2020.1.16
+
+# OCR引擎（P2兜底，可选）
+paddleocr>=2.7.0
+paddlepaddle>=2.5.0
+Pillow>=10.0.0
+
+# 数据分析（可选，用于统计）
+pandas>=2.0.0
+
+# 分布式任务队列（可选）
+redis>=5.0.0
+
+# 图片下载
+aiohttp>=3.9.0
+aiofiles>=23.0.0

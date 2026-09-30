@@ -1,0 +1,17 @@
+[
+  "https://www.zhihu.com/api/v1/columns/{column_id}/posts/{section_id}",
+  "https://zhuanlan.zhihu.com/api/columns/{column_id}/posts/{section_id}/content",
+  "https://www.zhihu.com/api/v4/market/columns/{column_id}/sections/{section_id}",
+  "https://api.zhihu.com/articles/{article_id}?include=content",
+  "https://api.zhihu.com/market/sections/{section_id}?include=content",
+  "https://www.zhihu.com/api/v4/articles/{article_id}/recommendations?include=content",
+  "/api/v4/columns/{column_id}/posts/{section_id}",
+  "/api/v3/columns/{column_id}/sections/{section_id}",
+  "/api/v2/market/sections/{id}?include=content",
+  "/api/v1/market/paid/content/{id}",
+  "/api/v4/market/sections/{id}?include=content&filter=all",
+  "/api/v4/market/sections/{id}/full",
+  "/api/v4/articles/{id}?include=data[*].content,comment_permission,voteup_count",
+  "/column/{column_id}/section/{section_id}?format=json",
+  "/api/columns/{column_id}/articles/{section_id}?include=content"
+]

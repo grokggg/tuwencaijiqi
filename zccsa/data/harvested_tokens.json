@@ -1,0 +1,136 @@
+[
+  {
+    "token": "SIM_PARTNER_TOKEN_weread_zhihu_valid_2024_1979959692122943",
+    "source": "simulated",
+    "repo": "self_test",
+    "file_path": "simulation",
+    "url": "",
+    "date_found": "2026-08-03",
+    "validated": true
+  },
+  {
+    "token": "v2.local.ABCdef123GHI456jkl789mno012pqr345",
+    "source": "harvester_extract",
+    "repo": "sample_text",
+    "file_path": "pipeline_test",
+    "url": "",
+    "date_found": "2026-08-04",
+    "validated": false
+  },
+  {
+    "token": "sk_test_51H8kLm2nOpQ4rStUvWxYz0123456789",
+    "source": "harvester_extract",
+    "repo": "sample_text",
+    "file_path": "pipeline_test",
+    "url": "",
+    "date_found": "2026-08-04",
+    "validated": false
+  },
+  {
+    "token": "partner_weread_2a4b6c8d0e1f3g5h7i9j1k2l3m4n5o6p",
+    "source": "harvester_extract",
+    "repo": "sample_text",
+    "file_path": "pipeline_test",
+    "url": "",
+    "date_found": "2026-08-04",
+    "validated": false
+  },
+  {
+    "token": "cs_abc123def456ghi789jkl012mno345pqr678",
+    "source": "harvester_extract",
+    "repo": "sample_text",
+    "file_path": "pipeline_test",
+    "url": "",
+    "date_found": "2026-08-04",
+    "validated": false
+  },
+  {
+    "token": "test_token_123",
+    "source": "simulated_test",
+    "repo": "pipeline_test",
+    "file_path": "pipeline_test",
+    "url": "",
+    "date_found": "2026-08-04",
+    "validated": false
+  },
+  {
+    "token": "simulated_bearer_abc456xyz",
+    "source": "simulated_test",
+    "repo": "pipeline_test",
+    "file_path": "pipeline_test",
+    "url": "",
+    "date_found": "2026-08-04",
+    "validated": false
+  },
+  {
+    "token": "dummy_api_key_789def",
+    "source": "simulated_test",
+    "repo": "pipeline_test",
+    "file_path": "pipeline_test",
+    "url": "",
+    "date_found": "2026-08-04",
+    "validated": false
+  },
+  {
+    "token": "session_1786086726",
+    "source": "response_intercept",
+    "repo": "https://www.zhihu.com/api/v3/oauth/sms/supported_countries",
+    "file_path": "browser_capture",
+    "url": "https://www.zhihu.com/api/v3/oauth/sms/supported_countries",
+    "date_found": "2026-08-07",
+    "validated": true,
+    "validation_info": {
+      "validated_at": "2026-08-07T07:12:09.567605",
+      "endpoint": "https://www.zhihu.com/api/v3/oauth/sms/supported_countries",
+      "body_length": 10464,
+      "capture_method": "response_capture",
+      "cookies": {
+        "_zap": "93cf5438-6448-4020-8f39-909681dc60cb",
+        "_xsrf": "912de9c7-10c0-420b-bd81-191c46399edd",
+        "BEC": "6c53268835aec2199978cd4b4f988f8c",
+        "Hm_lvt_98beee57fd2ef70ccdd5ca52b9740c49": "1786086723",
+        "Hm_lpvt_98beee57fd2ef70ccdd5ca52b9740c49": "1786086723",
+        "HMACCOUNT": "403626196D0993B3",
+        "d_c0": "k_PXa8_XthyPTjWwbV_kmaKtE0wxt3t5N9k=|1786086723",
+        "captcha_session_v2": "2|1:0|10:1786086724|18:captcha_session_v2|88:ak02bmg3aFp3R0p1Y1FLeEp5c2UyaENzMlhlSjlLeG9xUHNQMDhSdG9XamVvak12ZWpka05hQ1BLMTd6blJnOA==|a9b6bb1d92a995bf435bf0932341742e0ae562f948bd9d3e29f95ac78aa0a714",
+        "SESSIONID": "70GOvrKt4mbzHHStbyKHTBkjRVbNBMHJo736iOWJo2o",
+        "JOID": "UVwVAU5X4Jc4KlcdCRXRzDH_gaoWZ9TScFoiUn9livFAZRlJeRBj51MrVBsMlZ7cL06vXOrC18Sa6FntP4udrR0=",
+        "osd": "VlkUBUNQ5ZY8J1AYCBHcyzT-hacRYtXWfV0nU3tojfRBYRROfBFn6lQuVR8BkpvdK0OoWevG2sOf6V3gOI6cqRA=",
+        "__snaker__id": "ANPNMg8cbq4OxaQv",
+        "gdxidpyhxdE": "wxGObs%5CLqUTwAKpcBB6DOJu38d%5CwOvSctGEPRnLTavcGT33E%5CeQBN6oJg3t%5C4tL1MzOGxLTqYhbbWsSGXxTZ%5CpvE7dGLQWPW8hSDjpyb%2B0LRjoQ6Slv%2FuaHcJwXJH6u9LcKdktx91leZPVzL5NNuaryyKM20or%5Cc%2BVVJ%2FtkfNN2QUZrL%3A1786087625547"
+      },
+      "status_code": 200
+    }
+  },
+  {
+    "token": "COOKIE_SESSION:_xsrf=ee785e9e-d196-45c9-8;_zap=3c6f89e1-d2a5-4428-a;d_c0=HjWYVYHYthyPThvKGdUg",
+    "source": "browser_live_capture",
+    "repo": "zhihu.com_browser_session",
+    "file_path": "live_capture",
+    "url": "https://www.zhihu.com/market/paid_column/1979976139138147736/section/1979959692122943787",
+    "date_found": "2026-08-07",
+    "validated": true,
+    "cookies": {
+      "_zap": "3c6f89e1-d2a5-4428-a9e9-5155357b40e2",
+      "_xsrf": "ee785e9e-d196-45c9-8b73-c2d537fa793b",
+      "BEC": "5ee33e0856ed13c879689106c041a08d",
+      "d_c0": "HjWYVYHYthyPThvKGdUg5LbItx4Nxwlt7YI=|1786086905",
+      "Hm_lvt_98beee57fd2ef70ccdd5ca52b9740c49": "1786086906",
+      "Hm_lpvt_98beee57fd2ef70ccdd5ca52b9740c49": "1786086906",
+      "HMACCOUNT": "BABC48AA6DAE87B4",
+      "captcha_session_v2": "2|1:0|10:1786086906|18:captcha_session_v2|88:VE42eEtBcWF4bUF0Rjhvc1M2MmY5UVBCeTh1OVlVRWxTdlpEUHV1RkdHQW5GQXRTUkpURzdhd2l2ZnMwczFReg==|a872b279dda33a364da07d9a97d58f2cebdf00b804c7f1c2582e1d3fb4a0dd46",
+      "SESSIONID": "cCM32sSN36WuyFb8caVUyNGYFU5TVPPWk1XUjhxCqDy",
+      "JOID": "Ul8XA048PLRAOkMZaRIO7pG_m613WHr7dg03TyUKDeY3RgB8VMW-xio4QR5uvqwqzaBfTEsw1SB33glLFGf3XSA=",
+      "osd": "UlkUAE88OrdDO0MfahEP7pe8mKx3Xnn4dw0xTCYLDeA0RQF8Usa9xyo-Qh1vvqopzqFfSkgz1CBx3QpKFGH0XiE=",
+      "__snaker__id": "jaAOXINzwfA8QR93",
+      "gdxidpyhxdE": "L85rpfDhJkUfOhECrE2xlenKCoVXGL1OYffB71qL2q2Q52u5tpfjEOUMplkLPTPQzMUuKH1qtpKc5X%2FJ5AgJXTRRNTCu4jTx0yTaUIgauDfTBX%2B15SA0JrlV%5CpVxeOHWwTpU%5Cwrfij13DpILXpSnGo7uygvBA%2FJfEo52Mvk6Q4J9DHPN%3A1786087808054",
+      "__zse_ck": "005_1Dzc8coxUp00M3Wt9JF5N0fTWD5DmnfD792EOBMly1sL2QvRz2ly3aPpPTRFAhFx8czQ0HArpLGBMn0ONbFZEJmg1ygPNjUVZNFDVQcOf=HsJhILQvHwRhC/QfsbcZIl-0Ia2VyEUp4VenvfJE24QuJn6P3XSQ18Px+BEcA7UWldk99zMgK1R9ed5Tr+uwYom88RNCj9e3TcDq/P6uVWdZeUTAMeKubca4tmS+2LytGDgFpbNlR8Iq8i7JE1Tc1VZ",
+      "v_m8": "AUoqHBdHSH0SGg4aHDJdRUEXVko6DQMMADoAKwAAR2UDBwoDSlFvQEJXQW9FCQ=="
+    },
+    "capture_method": "browser_fetch",
+    "validation_info": {
+      "validated_at": "2026-08-07T07:15:22.894486",
+      "body_length": 207508
+    }
+  }
+]

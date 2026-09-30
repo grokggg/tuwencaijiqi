@@ -1,0 +1,855 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=gb18030"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"/>
+        <title>��������-- ������ѧ��</title>        <META content="����С˵ �ֻ����� ����ԭ���� ������ѧ��" name="keywords"/>
+        <link href="//s9-static.jjwxc.net/css/index.css" rel="stylesheet" type="text/css"/>
+        <style type="text/css">
+            a:link {
+                color:black;
+            }
+
+            .searchContainer {
+                width:984px;
+                border:0px;
+                background:#FFFFFF
+            }
+
+            .nav {
+                width:790px;
+            }
+
+            .ord {
+                width:180px;
+                float:right;
+                text-align:right;
+            }
+
+            .intro {
+                color:#666666;
+                margin:5px 0 0 0;
+                white-space:normal;
+                word-break:break-all;
+                overflow:hidden;
+            }
+
+            .info {
+                color:#3B9D3B;
+                margin-top:10px;
+            }
+
+            .page {
+                clear: both;
+                display:block;
+                padding:10px 0px 20px 0px;
+                text-align:center;
+            }
+            h3 #a {
+                font-size:13.8px;
+            }
+
+            .search_icon {
+                margin-left:5px;
+                cursor: pointer;
+            }
+            #other_search_nav {
+                -moz-background-clip:border;
+                -moz-background-inline-policy:continuous;
+                -moz-background-origin:padding;
+                background:#F0F7F9 none repeat scroll 0 0;
+                border-top:1px solid #6B90DA;
+                padding-top: 5px;
+                margin-button: 10px;
+                font-size: 14px;
+            }
+            #snav {
+                width: 790px;
+            }
+            #other_search {display:none;}
+            .drama_label {
+                padding: 5px;
+                background-image: linear-gradient(#29b937, #00951f);
+                color: white;
+                border-radius: 5px;
+                line-height: 25px;
+            }
+            .search-type-all{border-bottom:1px solid #BBD5B0;margin:1.5rem 0 1rem 0}
+            .search-type{text-align: center;display: inline-block;margin-right: 20px;}
+            .search-type-item{font-size: 16px;color:#3B9D3B;margin-bottom: 5px;padding:3px 5px;}
+            .bottom-line{width: 21px;height: 4px;background: #FFFFFF;display: inline-block;}
+            .search-type.active .search-type-item{background: #ebf5eb;border-radius: 11px;}
+            .search-type.active .bottom-line{background: #3B9D3B;border-radius: 5px;}
+            .order-type-all{margin-bottom: 28px;font-size:15px;}
+            .order-type-item{margin-left:10px;}
+            .order-type-item.active{color: #3B9D3B;}
+            .left-order{float: left;font-size:15px;}
+            .right-order{float: right;display: none;font-size:15px;}
+            #reader-fav{background: #ebf5eb;border-radius: 11px;margin-left: 10px;;color:#3B9D3B;padding:3px 5px;}
+        </style>
+    </head>
+    <body topmargin="0">
+        <link href="//static.jjwxc.net/css/channel_2010/index2010.css?ver=20260529"
+      rel="stylesheet"
+      type="text/css"
+      media="screen"/>
+<style>
+    #showNovelTro {position: absolute;display: none;padding: 4px;border: 1px solid #009900;background-color: #FFFFFF;min-width: 240px;z-index: 9999;}
+    #showNovelTro ul {list-style-type: none;padding: 0;margin: 0;text-align: left;}
+    #showNovelTro ul li {margin: 0;padding: 0;list-style-type: none;}
+
+    #mclear {
+        position: absolute;
+        right: 3px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 15px;
+        height: 15px;
+        border: 0;
+        background: url(//s9-static.jjwxc.net/images/clear.png) no-repeat center;
+        background-size: 13px;
+        cursor: pointer;
+        outline: none;
+    }
+
+    .p_link {
+        width: 382px;
+    }
+    .link2 {background: none;text-align: left;background: url(//static.jjwxc.net/images/channel_2010/headcbg_bj.jpg?v=20210826) no-repeat;display: flex;justify-content: space-between;width: 381px;}
+    .link2 a {padding: 0;}
+    .link2 a:first-child {padding-left: 5px;}
+    .link2 a:last-child {padding-right: 5px;}
+    .link2 a img,.link2 a span{vertical-align: middle;}
+    .link2 a img{width: 12px;height: 12px;}
+    .show-browser {height: auto;text-align: center;font-size: 16px; color: #ff0000;background-color: rgb(254, 249, 224);}
+    .show-browser.with-padding {padding: 5px 0;}
+    .drama_label {
+        padding: 5px;
+        background-image: linear-gradient(#29b937, #00951f);
+        color: white;
+        border-radius: 5px;
+        line-height: 25px;
+    }
+    </style>
+
+<script type="text/javascript" src="//static.jjwxc.net/scripts/jquery-1.11.2.min.js?ver=20161205"></script>
+<script type="text/javascript" src="//static.jjwxc.net/scripts/jquery-migrate-1.4.1.min.js"></script>
+<script type="text/javascript" src="//static.jjwxc.net/scripts/jquery.blockUI.pack.js"></script>
+<script type="text/javascript" src="//static.jjwxc.net/scripts/jjlogin.js?ver=20260709" charset="GBK"></script>
+<script type="text/javascript" src="//static.jjwxc.net/scripts/main.120724.js?ver=20260601" charset="GBK"></script>
+<script type="text/javascript" src="//static.jjwxc.net/scripts/auto_save_text.js" charset="GBK"></script>
+<script type="text/javascript" src="//static.jjwxc.net/scripts/emoji.js?ver=20260617" charset="GBK"></script>
+<script src="//static.jjwxc.net/scripts/lib/fock/fock_1_0.prod.js"></script><script src="//static.jjwxc.net/scripts/searchkeysign.20260522.js"></script>
+<script>
+    $(function() {
+        // �������������ʾ
+        $.ajax({
+            type: "get",
+            async: true, //ͬ���첽 trueΪ�첽(Ĭ��),falseΪͬ��
+            url: "//s8-static.jjwxc.net/public_notice.php", //ʵ���Ϸ���ʱ�����ĵ�ַΪ: test.php?callbackfun=jsonpCallback&id=10
+            cache: true, //Ĭ��ֵfalse falseʱ���������&_=�����
+            dataType: "jsonp",
+            jsonpCallback: "red_envelope_150204",
+            ifModified: true,
+            success: function(json) {
+                if (json.status) {
+                    var msg = '';
+                    $.each(json.data, function(index, v) {
+                        msg += v+"&nbsp;&nbsp;&nbsp;&nbsp;";
+                    });
+                    if (msg!='') {
+                        $("#public_notice_new").css('display', 'block');
+                        $("#public_info_show").html(msg);
+                        document.getElementById("public_info_show").start();//���ü��ص���marquee�Զ�����ʧЧ�������ֶ�����һ��
+                    }
+                }
+            }
+        });
+        var version = 0;
+        var caretPos = 0;
+        $('#autoComplete').bind('input propertychange', function() {
+            var checkType = $("#tj option:selected").val();
+            if (checkType!=1) {
+                return false;
+            }
+            var words = encodeURIComponent($(this).val());
+            var type = 1;//����Ʒ����
+            var html = "";
+            var left = 195;
+            var top = 65;
+            //TODO:����¼��п��ܻᴥ������ ���ǻ�û�ҵ�ԭ�� version���������̨Ҳ�ƺ�û������
+            version++;
+            var inputObj = document.getElementById("autoComplete");
+            var thisCaretPos = getCursortPosition(inputObj);
+            if (thisCaretPos!=caretPos) {
+                caretPos = thisCaretPos;
+                $('#showNovelTro').hide();
+                $.getJSON("../search/search_ajax.php?action=search&keywords="+words+"&type="+type+"&version="+version+"&getfull=1", function(data) {
+                    if (data.status==200 && data.data.length) {
+                        html += "<ul>";
+                        $.each(data.data, function(i, v) {
+                            html += "<li><a target='_blank' href='//my.jjwxc.net/search/result.php?novelid="+v.novelid+"&searchkey="+encodeURIComponent(data.searchkey)+"&type="+data.type+"'>"
+                                +v.novelname+(v.film_label ? ' <label class="drama_label">'+v.film_label+'</label>' : '')+"</a> -----<a href='//www.jjwxc.net/oneauthor.php?authorid="+v.authorid+"'>"+v.authorname+"</a> </li>"
+                        })
+                        html += "</ul>";
+                        $('#showNovelTro').css({
+                            left: left+'px',
+                            top: top+'px'
+                        }).html(html).show();
+                    }
+                })
+            }
+        });
+        $(document).click(function() {
+            $('#showNovelTro').hide();
+        });
+
+        var loginUserCookie = jjCookie.get('loginuserofmanager', false);
+        var managerCookie = getCookie("managername");
+        if (loginUserCookie!=undefined&&managerCookie!=null&&managerCookie!='') {
+            var loginuserinfo = loginUserCookie.split("_");
+            var showcontent = loginuserinfo[2];
+            $("#showcontent").html(showcontent);
+            $("#loginUserDiv").show();
+        }
+        //�ر���������ʾ�����ظ���  
+        $("#closeDiv").click(function() {
+            $("#loginUserDiv").hide();
+        });
+
+        //��ȡ�û��ϴ�ʹ�õ�����ʽ
+        if(getCookie('jj_kw_search_order')) {
+            $('#formleft > input[name=ord]').val(getCookie('jj_kw_search_order'))
+        }
+
+    })
+    function getCursortPosition(ctrl) {//��ȡ���λ�ú���
+        var CaretPos = 0;    // IE Support
+        if (document.selection) {
+            ctrl.focus();
+            var Sel = document.selection.createRange();
+            Sel.moveStart('character', -ctrl.value.length);
+            CaretPos = Sel.text.length;
+        }
+        // Firefox support
+        else if (ctrl.selectionStart||ctrl.selectionStart=='0')
+            CaretPos = ctrl.selectionStart;
+        return (CaretPos);
+    }
+    //����������¼�
+    function clearkey() {
+        $("#autoComplete").val("").css("color", "#000");  //����id���
+    }
+    //�õ�������¼�
+    function OnEnter(field) {
+        if (field.value==field.defaultValue) {
+            field.value = "";
+            field.style.color = "#000";
+        }
+    }
+    //ʧȥ������¼�
+    function OnExit(field) {
+        if (field.value=="") {
+            field.value = field.defaultValue;
+            field.style.color = "#ccc";
+        }
+    }
+</script>
+<div class="show-browser">
+<!--����������IE������ʾ-->
+</div>
+<div id="sitetop" class="c99" style="position: relative; z-index: 1001;"><div style="float:left"><span id="serverTime"></span></div>
+    <div class="toplogin">
+        <div class="top_right" style="position:relative; z-index:1001;">
+            <div id="t_user_signin"></div> <div id="t_user_info"></div> <div id="t_user_sms"></div> <div id="t_user_nav"></div>
+            <noscript>�������������������javascript���޷�����ʹ�ñ���վ���ܣ�<a href="https://help.jjwxc.net/user/article/136" target="_blank"><font color="blue">��ο��˷������¿���javascript</font></a></noscript>
+        </div>
+    </div>
+    <script>checkLogin();</script>
+    <!--�������ʾ��Ϣ��-->
+    <div class="blockUI blockMsg" id ="examine_num" style="z-index: 1002; position: absolute; height:45px; width:140px; top: 35px; left: 820px; text-align: center; color: rgb(0, 0, 0);  background-color:#FFFFF7;border:1px solid #FFCC00;display: none;line-height:15px">
+        <a href="#" style="float: right;margin-right: 8px" id="examine_num_close">�ر�</a><br/>
+        <div id ="examine_num_content"></div>
+    </div>
+</div>
+<!--��վͷ������-->
+<!--js�����жϣ�����ǰ��foot_opt.php�еı�ǩ��������-->
+<p id="checkJs" style="text-align:center"></p>
+<!--logo ������-->
+<div id="sitehead" style="position:relative; z-index:1000;line-height: 22px;">
+    <div class="logo"><a href="//www.jjwxc.net/" rel="nofollow"><img src="//static.jjwxc.net/images/channel_2010/logo.gif" width="120" height="120" alt="������ѧ��logo" title="������ѧ��" /></a></div>
+    <div class="nav1" style="display: grid">
+        <div class="fl p_link" style="grid-column: 1/2;">
+            <div class="link1">
+                <a href="//www.jjwxc.net/fenzhan/yq/" class="a1"></a>
+                <a href="//www.jjwxc.net/fenzhan/noyq/" class="a3"></a>
+                <a href="//www.jjwxc.net/fenzhan/ys/" class="a4"></a>
+                <a href="//www.jjwxc.net/fenzhan/nocp_plus/" class="a5"></a>
+                <a href="//www.jjwxc.net/fenzhan/dm/bh.html" class="a6"></a>
+                <a href="//www.jjwxc.net/fenzhan/yc/" class="a2"></a>
+            </div>
+            <div class="link2"><a href="//www.jjwxc.net/fenzhan/by/" target="_blank"><img src="//static.jjwxc.net/images/channel_2010/headcbg_icon1.png?v=2021082715" alt=""><span>����Ŀ�</span></a><a href="//www.jjwxc.net/fenzhan/bq/" target="_blank"><img src="//static.jjwxc.net/images/channel_2010/headcbg_icon2.png?v=2021082715" alt=""><span>����Ӱ��</span></a><a href="//www.jjwxc.net/channel/children.php" target="_blank"><img src="//static.jjwxc.net/images/channel_2010/headcbg_icon3.png?v=2021082715" alt=""><span>С�����ö�</span></a><a href="//bbs.jjwxc.net" target="_blank"><img src="//static.jjwxc.net/images/channel_2010/headcbg_icon4.png?v=2021082715" alt=""><span>��̳</span></a><a onclick="trans(0);return false;" href="#"><img src="//static.jjwxc.net/images/channel_2010/headcbg_icon5.png?v=2021082715" alt=""><span id="S2TLink">�����</span></a><a href="//www.jjwxc.net/sp/JJ-app-download/" onclick="_czc.push(['_trackEvent', 'WWW��ҳ', '���', '�ֻ�Ƶ��']);" target="_blank"><img src="//static.jjwxc.net/images/channel_2010/headcbg_icon6.png?v=2021082715" alt=""><span style="color:red;font-weight:700">APP����</span></a></div>
+        </div>
+        <!--360���-ȫվͨ������banner���(����)-468*60-->
+        <div style="grid-column: 2/3;width: 468px;" id="top_banner_360"></div>
+        <img class="closeJJAd" onclick="closeJJAd(this, 'top_banner_360')" src="//static.jjwxc.net/images/close.gif" alt="�رչ��" style="position: absolute;right: 0; top: 0; width: 20px; height: 20px">
+        <div id="ad3"></div>
+        <div class="clear"></div>
+    </div>
+    <div class="nav2">
+        <div class="left1"></div>
+        <div class="right1"></div>
+        <div id="dymenu">
+            <ul class="root">
+                <li class="topen">
+                    <!--[if IE]><a
+                href="#">
+            <table>
+            <tbody>
+            <tr>
+                    <td><![endif]-->
+                    <div class="title"><a href="//www.jjwxc.net/bookbase_slave.php?orderstr=2">��Ʒ��<img src="//static.jjwxc.net/images/channel_2010/navli.jpg" /></a></div>
+                    <ul>
+                        <li><a href="//www.jjwxc.net/bookbase_slave.php?booktype=vip">VIP��Ʒ</a></li>
+                        <li><a href="//www.jjwxc.net/bookbase_slave.php?booktype=package">�����/����</a></li>
+                        <li><a href="//www.jjwxc.net/bookbase_slave.php?endstr=2&orderstr=1">�����Ʒ</a></li>
+                        <li><a href="//www.jjwxc.net/bookbase_slave.php?booktype=sp">פվ��Ʒ</a><iframe src="about:blank" style="filter:'progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=0)'; position:absolute; visibility:inherit; top:0px; left:0px; width:110px; z-index:-1; height:65px;"></iframe></li>
+                        <li><a href="//www.jjwxc.net/bookbase_slave.php?booktype=scriptures">�����Ŀ�</a></li>
+                        <li><a href="//www.jjwxc.net/bookbase_slave.php?booktype=free">����Ŀ�</a></li>
+                    </ul>
+                    <!--[if IE]></td></tr></tbody></table></a><![endif]-->
+                </li>
+                <li class="topen">
+                    <!--[if IE]><a
+                href="#">
+                    <table>
+                    <tbody>
+                    <tr>
+                    <td><![endif]-->
+                    <div class="title"><a href="//www.jjwxc.net/topten.php">���а�<img src="//static.jjwxc.net/images/channel_2010/navli.jpg" /></a></div>
+                    <ul>
+                        <li><a href="//www.jjwxc.net/topten.php?orderstr=3">�½����߰�</a></li>
+                        <li><a href="//www.jjwxc.net/topten.php?orderstr=5">�¶����а�</a></li>
+                        <li><a href="//www.jjwxc.net/topten.php?orderstr=4">�������а�</a></li>
+                        <li><a href="//www.jjwxc.net/topten.php?orderstr=6">�������а�</a></li>
+                        <li><a href="//www.jjwxc.net/topten.php?orderstr=7">�ܷ����а�</a></li>
+                        <li><a href="//www.jjwxc.net/topten.php?orderstr=8">�������а�</a></li>
+                        <li><a href="//www.jjwxc.net/topten.php?orderstr=1">���������</a></li>
+                        <li><a href="//www.jjwxc.net/topten.php?orderstr=1&t=1">���ƴ���������</a></li>
+                    </ul>
+                    <!--[if IE]></td></tr></tbody></table></a><![endif]-->
+                </li>
+                <li>
+                    <!--[if IE]><a
+                href="#">
+                    <table>
+                    <tbody>
+                    <tr>
+                    <td><![endif]-->
+                    <div class="title"><a href="//www.jjwxc.net/channel/comment.html">����Ƶ��<img src="//static.jjwxc.net/images/channel_2010/navli.jpg" /></a></div>
+                    <ul>
+                        <li><a href="//www.jjwxc.net/comment.php?orderstr=1">��������</a></li>
+                        <li><a href="//www.jjwxc.net/spcomment.php">��������</a></li>
+                        <li><a href="//www.jjwxc.net/universityreview.php">�ഺ֮��</a></li>
+                        <li><a href="//www.jjwxc.net/commentexperts.php">ר��������</a></li>
+                    </ul>
+                    <!--[if IE]></td></tr></tbody></table></a><![endif]-->
+                </li>
+                <li>
+                    <!--[if IE]><a
+                href="#">
+                    <table>
+                    <tbody>
+                    <tr>
+                    <td><![endif]-->
+                    <div class="title"><a href="//www.jjwxc.net/scorelist.php">����ר��<img src="//static.jjwxc.net/images/channel_2010/navli.jpg" /></a></div>
+                    <ul>
+                        <li><a href="//www.jjwxc.net/signauthorlist.php">ǩԼ��������</a></li>
+                        <li><a href="//www.jjwxc.net/scorelist.php">��������</a></li>
+                        <li><a href="//www.jjwxc.net/starshow.php">��������</a></li>
+                        <li><a href="//www.jjwxc.net/sp/welfare_system/page1.html">ǩԼ���߸���</a></li>
+                        <li><a href="//help.jjwxc.net/user/more/23/0">���ߵ���</a></li>
+                        <li><a href="//www.jjwxc.net/sp/author_questions/index.php">����ר��</a></li>
+                    </ul>
+                    <!--[if IE]></td></tr></tbody></table></a><![endif]-->
+                </li>
+                <li>
+                    <!--[if IE]><a
+                href="#">
+                    <table>
+                    <tbody>
+                    <tr>
+                    <td><![endif]-->
+                    <div class="title"><a href="//www.jjwxc.net/fenzhan/bq/">��Ȩר��<img src="//static.jjwxc.net/images/channel_2010/navli.jpg" /></a></div>
+                    <ul>
+                        <li><a href="//www.jjwxc.net/videoIntroduction.php">Ӱ���ƽ�</a></li>
+                        <li><a href="//www.jjwxc.net/copyright.php?publisherid=2">���³���</a></li>
+
+                    </ul>
+                    <!--[if IE]></td></tr></tbody></table></a><![endif]-->
+                </li>
+                <li>
+                    <!--[if IE]><a
+                href="#">
+                    <table>
+                    <tbody>
+                    <tr>
+                    <td><![endif]-->
+                    <div class="title"><a href="//www.jjwxc.net/aboutus/#fragment-33">���Ż<img src="//static.jjwxc.net/images/channel_2010/navli.jpg" /></a></div>
+                    <ul>
+                        <li><a href="//www.jjwxc.net/aboutus/#fragment-31">ý�屨��</a></li>
+                        <li><a href="//www.jjwxc.net/aboutus/#fragment-33">��վ�</a></li>
+                    </ul>
+                    <!--[if IE]></td></tr></tbody></table></a><![endif]-->
+                </li>
+                <li>
+                    <!--[if IE]><a href="#"><table><tbody><tr><td><![endif]-->
+                    <div class="title"><a href="//www.jjwxc.net/essayActivities.php">���Ļ</a></div>
+                    <!--[if IE]></td></tr></tbody></table></a><![endif]-->
+                </li>
+                <li>
+                    <!--[if IE]><a
+                href="#">
+                    <table>
+                    <tbody>
+                    <tr>
+                    <td><![endif]-->
+                    <div class="title"><a href="//my.jjwxc.net/pay/paycenter.php"><font color="red">��ֵ</font><img src="//static.jjwxc.net/images/channel_2010/navli.jpg" /></a></div>
+                    <ul>
+                        <li><a href="//my.jjwxc.net/pay/yeepay_zfb.php">֧����֧��</a></li>
+                        <li><a href="//my.jjwxc.net/pay/weixinPay/weixinPay.php">΢��֧��</a></li>
+                        <li><a href="//www.jjwxc.net/fenzhan/yq/action_center.html">���¿�����</a>
+<!--                            <iframe src="about:blank" style="filter:'progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=0)'; position:absolute; visibility:inherit; top:0px; left:0px; width:110px; z-index:-1; height:45px;"></iframe>-->
+                        </li>
+                        <li><a href="//my.jjwxc.net/backend/comment_check.php"><font color="red">��������ý�����</font></a></li>                    </ul>
+                    <!--[if IE]></td></tr></tbody></table></a><![endif]-->
+                </li>
+                <li>
+                    <!--[if IE]><a
+                href="#">
+                    <table>
+                    <tbody>
+                    <tr>
+                    <td><![endif]-->
+                    <div class="title"><a href="//my.jjwxc.net/backend/auto.php">����Ͷ��<img src="//static.jjwxc.net/images/channel_2010/navli.jpg" /></a></div>
+                    <ul>
+                        <li><a href="//my.jjwxc.net/backend/auto.php">Ͷ�߲�ѯ</a></li>
+                        <li><a href="//my.jjwxc.net/backend/auto.php?act=3">ɾ��ԭ����������</a><iframe src="about:blank" style="filter:'progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=0)'; position:absolute; visibility:inherit; top:0px; left:0px; width:110px; z-index:-1; height:65px;"></iframe></li>
+                        <li><a href="//my.jjwxc.net/backend/auto.php?act=4">ɾ������</a></li>
+                        <li><a href="//my.jjwxc.net/backend/auto.php?act=5">�������</a></li>
+                        <li><a href="//help.jjwxc.net/user/article/49">���ı���</a></li>
+                        <li><a href="//bbs.jjwxc.net/board.php?board=22&page=1">��̳����</a></li>
+                        <li><a href="//help.jjwxc.net/user/more_index">��������</a></li>
+                    </ul>
+                    <!--[if IE]></td></tr></tbody></table></a><![endif]-->
+                </li>
+                <li>
+                    <!--[if IE]><a
+                href="#">
+                    <table>
+                    <tbody>
+                    <tr>
+                    <td><![endif]-->
+                    <div class="title"><a href="//my.jjwxc.net/login.php">ע��/����<img src="//static.jjwxc.net/images/channel_2010/navli.jpg" /></a></div>
+                    <ul>
+                        <li><a href="//my.jjwxc.net/register/usersecurity.php" rel="nofollow">�û�ע��</a></li>
+                        <li><a href="//my.jjwxc.net/login.php">�������</a><iframe src="about:blank" style="filter:'progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=0)'; position:absolute; visibility:inherit; top:0px; left:0px; width:110px; z-index:-1; height:65px;"></iframe></li>
+                        <li><a href="//my.jjwxc.net/backend/logout.php" title="�˳�����״̬">�˳�����</a></li>
+                        <li><a href="//help.jjwxc.net/user/password">��������</a></li>
+                    </ul>
+                    <!--[if IE]></td></tr></tbody></table></a><![endif]-->
+                </li>
+
+                <li>
+                    <!--[if IE]><a
+                href="#">
+                    <table>
+                    <tbody>
+                    <tr>
+                    <td><![endif]-->
+                    <div class="title"><a href="//help.jjwxc.net/user/index">����<img src="//static.jjwxc.net/images/channel_2010/navli.jpg" /></a></div>
+                    <!--[if IE]></td></tr></tbody></table></a><![endif]-->
+                </li>
+
+                <li>
+                    <!--[if IE]><a
+                href="#">
+                    <table>
+                    <tbody>
+                    <tr>
+                    <td><![endif]-->
+                    <div class="title"><a href="http://activity.jjwxc.net">����<img src="//static.jjwxc.net/images/channel_2010/navli.jpg" /></a></div>
+                    <ul>
+                        <li >
+                            <a href="//www.jjwxc.net/sp/jjjj/index.php" target="_blank"  style="display:block;line-height:22px;height:22px;overflow: hidden;vertical-align: middle;">��Ƶ</a>
+                        </li>
+                        <li>
+                            <a href="http://activity.jjwxc.net/" target="_blank">����С��</a>
+                        </li>
+                        <!--                        <li>
+                                                    <a href="//jjzsxy.3737.com/" target="_blank">����������Ե
+                                                    </a>
+                                                </li>-->
+                    </ul>
+                    <!--[if IE]></td></tr></tbody></table></a><![endif]-->
+                </li>
+
+                            </ul>
+        </div>
+    </div>
+    <div class="nav3" style="display: grid;grid-template-columns: 8px auto 8px;">
+        <div class="left2" style="grid-column: 1"></div>
+        <div class="mainnavbox" style="grid-column: 2">
+            <div class="mainnav">
+
+                <a href="//www.jjwxc.net/fenzhan/by/">���</a>
+                <a href="//www.jjwxc.net/fenzhan/dm/ys.html">��������</a>
+                <a href="//www.jjwxc.net/fenzhan/dm/tr.html">����Ԫ����</a>
+                <a href="//www.jjwxc.net/fenzhan/yq/kh.html">δ����Ϸ����</a>
+                <a href="//www.jjwxc.net/fenzhan/yq/wx.html">�������</a>
+                <a href="//www.jjwxc.net/fenzhan/yq/chy.html">�Ŵ���Խ</a>
+                <a href="//www.jjwxc.net/fenzhan/yq/qc.html">��������</a>
+                <a href="//www.jjwxc.net/fenzhan/yq/bgx.html">�ִ�����</a>
+                <a href="//www.jjwxc.net/fenzhan/yq/bgg.html">�Ŵ�����</a>
+            </div>
+            <div class="search">
+                <a class="limitFree" href="//www.jjwxc.net/sp/novelfree/" target="_blank" style="float:left"><img width="51" style="margin-left: 40px;" src="//static.jjwxc.net/images/Channel/xmyd.gif" ></a>
+                <div class="search_right">
+                    <form  method="get" action="//www.jjwxc.net/bookbase.php" target="_top"  id="formright">
+                        <!--<input type="hidden" name="fbsj" value="3" />-->
+                        <input type="hidden" name="s_typeid" value="1" />
+                        <input type="hidden" name="version" value="1" />
+                                                <select name="fw" id="fwfw" class="input2">
+                            <option value="0">-��Χ-</option>
+                                                            <option value="1" >ȫվ</option>
+                                                                    <option value="2" >�����</option>
+                                                                    <option value="3" >VIP��</option>
+                                                                    <option value="4" >��ƪ����</option>
+                                                                    <option value="6" >���</option>
+                                                                    <option value="7" >��������</option>
+                                                            </select>
+                                                <select name="yc" id="ycyc" class="input2">
+                            <option value="0">-ԭ����-</option>
+                                                            <option value="1" >ԭ��</option>
+                                                                    <option value="2" >����</option>
+                                                            </select>
+                                                <select name="xx" id="xxxx" class="input2">
+                            <option value="0">-����-</option>
+                                                            <option value="1" >����</option>
+                                                                    <option value="2" >����</option>
+                                                                    <option value="3" >�ٺ�</option>
+                                                                    <option value="5" >��CP</option>
+                                                                    <option value="6" >��Ԫ</option>
+                                                            </select>
+                                                <select name="mainview" id="mainviewmainview" class="input2">
+                            <option value="0">-�ӽ�-</option>
+                                                            <option value="1" >����</option>
+                                                                    <option value="2" >Ů��</option>
+                                                                    <option value="3" >����</option>
+                                                                    <option value="4" >����</option>
+                                                                    <option value="5" >����</option>
+                                                                    <option value="8" >����</option>
+                                                                    <option value="9" >����</option>
+                                                                    <option value="12" >˫�ӽ�</option>
+                                                                    <option value="13" >���ӽ�</option>
+                                                            </select>
+                                                <select name="sd" id="sdsd" class="input2">
+                            <option value="0">-ʱ��-</option>
+                                                            <option value="1" >�����ִ�</option>
+                                                                    <option value="2" >��ɫ����</option>
+                                                                    <option value="4" >�ܿ���ʷ</option>
+                                                                    <option value="5" >����δ��</option>
+                                                            </select>
+                                                <select name="lx" id="lxlx" class="input2">
+                            <option value="0">-����-</option>
+                                                            <option value="1" >����</option>
+                                                                    <option value="2" >����</option>
+                                                                    <option value="3" >���</option>
+                                                                    <option value="4" >����</option>
+                                                                    <option value="5" >��Ϸ</option>
+                                                                    <option value="6" >����</option>
+                                                                    <option value="7" >�ƻ�</option>
+                                                                    <option value="8" >ͯ��</option>
+                                                                    <option value="9" >���</option>
+                                                                    <option value="10" >����</option>
+                                                                    <option value="16" >����</option>
+                                                                    <option value="17" >��С˵</option>
+                                                                    <option value="20" >�ŵ�����</option>
+                                                                    <option value="18" >��������</option>
+                                                                    <option value="19" >��������</option>
+                                                                    <option value="21" >��������</option>
+                                                                    <option value="22" >����</option>
+                                                                    <option value="23" >ɢ��</option>
+                                                                    <option value="24" >Ԣ��</option>
+                                                                    <option value="25" >ͯҥ</option>
+                                                                    <option value="27" >��ͯС˵</option>
+                                                            </select>
+                                                        <select name="bq" id="ss_tags" class="input2" style="width: 71px;">
+                                    <!--ԭ�������� id="s_tags" ������js�ļ���ԭ��������ø�id�ᵼ�����������ܶ�ܶ��ǩ�����ң�����޸ĵ���-->
+                                    <option value="-1">-��ǩ-</option>
+                                    <!--��ǩ��ΪAjax��ȡ���� main.120724_.js ��-->
+                                </select>
+                                                    <input name="submit" type="submit" onclick="_czc.push(['_trackEvent', 'WWW��ҳ', '���', '�����ѯ']);" class="searchbutton input3" id="submit" value="ɸѡ" />
+                    </form>
+                </div>
+                <div class="search_left">
+                    <form name="form8" method="get" action="//www.jjwxc.net/search.php" target=_blank id="formleft" onsubmit="if(!$('#autoComplete').val()){$('#autoComplete').val($('#autoComplete').attr('placeholder'))};return true;">
+                                                <div style="position: relative; display: inline-block;">
+                            <input name = "kw" id = "autoComplete" autocomplete = "off" type = "text" style = "width: 94px;color:#000000;padding-right: 19px" value = "" placeholder="������ؼ���">
+                            <input type="button"  id="mclear"  onclick="clearkey()"/>
+                        </div>
+                        <input type="hidden" name="ord" value="">
+                        <input type="hidden" name="version" value="1">
+                        <div id="showNovelTro"></div>
+                        <select name="t" class="input2" id="tj">
+                            <option value="1" selected>��Ʒ</option>
+                            <option value="2">����</option>
+                            <option value="4">����</option>
+                            <option value="5">���</option>
+                            <option value="6">�����ؼ���</option>
+                            <option value="7">����ID</option>
+                        </select>
+                        <input  type="submit" onclick="_czc.push(['_trackEvent', 'WWW��ҳ', '���', '�ؼ��ֲ�ѯ']);" value="����" class="searchbutton input3" />
+                        <!--super146-->
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="right2" style="grid-column: 3"></div>
+    </div>
+</div>
+<script>headChange();</script>
+<div style="width:var(--header-width); margin:5px auto;display: none;" id="public_notice_new">
+    <div style="width:30px;float:left">
+        <img src="//static.jjwxc.net/images/laba.png">
+    </div>
+    <div style="width:calc(var(--header-width) - 30px);float:left">
+        <marquee scrollAmount="3" id="public_info_show" onmouseover="this.stop()" onmouseout="this.start()"></marquee>
+    </div>
+</div>
+<div  id="loginUserDiv" style="display:none">
+    <font style="color:red;font-size:18px" id="showcontent"></font>
+    <a title="�ر�"  id="closeDiv" href="javascript:void(0)"> </a>
+</div>
+<div class="h8px"></div>
+<!--logo ����������-->        <script type="text/javascript" src="//static.jjwxc.net/scripts/rank_click_track.js?var=20250115"></script>
+        <script type="text/javascript">
+            var w = '沈念念 靳川';
+            let t = getURLParam('t');
+
+            function other_search(s) {
+                switch (s) {
+                    case 'bing':
+                        engine = '��Ӧ';
+                        engine_url ='https://cn.bing.com/search?q='+encodeURIComponent(w+' site:jjwxc.net')+'&go=&form=QBLH&filt=all';
+                        break;
+                    case "baidu":
+                        engine = "�ٶ�"
+                        engine_url = "https://www.baidu.com/s?wd="+encodeURIComponent(w+' site:jjwxc.net')
+                        break;
+                    default :
+                        break;
+                }
+                if(s == 'baidu'){
+                    window.open(engine_url,'_blank');
+                }else{
+                    document.getElementById('other_search').style.display = 'block';
+                    document.getElementById('search_result').style.display = 'none';
+                    document.getElementById('other_search_nav_text').innerHTML = 'ʹ��'+engine+'����'
+                    document.getElementById('other_search_frame').src = engine_url;
+                }
+            }
+            $(function(){
+                $('#autoComplete').attr('placeholder',w);
+                if (t) {
+                    $('#tj').val(t);
+                    $('#search-type-'+t).addClass('active').siblings().removeClass('active');
+                }
+                if (getCookie('readerid')) {
+                    $('.right-order').css('display','block')
+                }
+                let ord = getURLParam('ord');
+                if(!ord) {
+                    ord = 'relate';
+                    if (getCookie('jj_kw_search_order')) {
+                        ord = getCookie('jj_kw_search_order');
+                    }
+                }
+                $('#order-type-'+ord).addClass('active').siblings().removeClass('active');
+                let filterFav = getURLParam('fav')
+                if (filterFav) {
+                    $('#reader-fav').html('��ʾ���ղ�').bind('click', function() {
+                        changeReaderFav('')
+                    });
+                } else {
+                    $('#reader-fav').html('�ų����ղ�').bind('click', function() {
+                        changeReaderFav(getCookie('readerid'))
+                    });
+                }
+            })
+            // ��ȡ���������
+            let viewInfoKey = 'searchPageInfo';
+            let viewInfo = sessionStorage.getItem(viewInfoKey);
+            if (viewInfo) {
+                viewInfo = JSON.parse(viewInfo)
+            }
+            if (!viewInfo || viewInfo.keyword !== w) {
+                viewInfo = {
+                    keyword: w,
+                    baseurl: location.href,
+                };
+            }
+            viewInfo['type'+t] = location.href;
+            sessionStorage.setItem(viewInfoKey, JSON.stringify(viewInfo));
+
+            // �л���������
+            function changeType(type) {
+                if (viewInfo['type'+type] && viewInfo['keyword'] == w) {
+                    window.open(viewInfo['type'+type],'_self');
+                } else {
+                    window.open(viewInfo.baseurl.replace(/\&t=[1-7]/g, '')+'&t='+type, '_self')
+                }
+            }
+            // �л���������
+            function changeOrderType(type) {
+                //��¼һ���û��������´�Ĭ�ϴ���
+                setCookie("jj_kw_search_order", type, new Date(eval((new Date()).getTime()+86400*90)), '/', '.jjwxc.net');
+                window.open(location.href.replace(/\&ord=[a-z_]{2,100}/g, '')+'&ord='+type, '_self')
+            }
+            // �л��ղ�
+            function changeReaderFav(readerid) {
+                let currentFavReader = getCookie('readerid')
+                if (readerid) {
+                    window.open(location.href+'&fav='+currentFavReader, '_self')
+                } else {
+                    window.open(location.href.replace(/\&fav=[0-9]{1,10}/g, ''), '_self')
+                }
+            }
+        </script>
+        <table class="searchContainer" width="984" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+            <tr>
+                <td>
+                    <div>
+                        <div class="search-type-all"><span class="search-type" id="search-type-1" onclick="changeType(1)">    <div class="search-type-item">����</div>    <div class="bottom-line"></div></span><span class="search-type" id="search-type-2" onclick="changeType(2)">    <div class="search-type-item">����</div>    <div class="bottom-line"></div></span><span class="search-type" id="search-type-4" onclick="changeType(4)">    <div class="search-type-item">����</div>    <div class="bottom-line"></div></span><span class="search-type" id="search-type-5" onclick="changeType(5)">    <div class="search-type-item">���</div>    <div class="bottom-line"></div></span><span class="search-type" id="search-type-6" onclick="changeType(6)">    <div class="search-type-item">����</div>    <div class="bottom-line"></div></span></div><div class="order-type-all"><div class="left-order"><span style="border-right: 1px solid #DBDBDB;color:#707070;">����&nbsp;</span><span class="order-type-item" id="order-type-relate" onclick="changeOrderType('relate')">�����</span><span class="order-type-item" id="order-type-novelscore" onclick="changeOrderType('novelscore')">����</span><span class="order-type-item" id="order-type-lastpost_time" onclick="changeOrderType('lastpost_time')">�������</span><span class="order-type-item" id="order-type-novelborndate" onclick="changeOrderType('novelborndate')">���·���</span><span class="order-type-item" id="order-type-novelsize" onclick="changeOrderType('novelsize')">����</span><span class="order-type-item" id="order-type-novelbefavoritedcount" onclick="changeOrderType('novelbefavoritedcount')">�ղ���</span><span class="order-type-item" id="order-type-reviewrank" onclick="changeOrderType('reviewrank')">���߷�</span><span class="order-type-item" id="order-type-publicindex" onclick="changeOrderType('publicindex')">���ڻ�ָ��</span><span class="order-type-item" id="order-type-random" onclick="changeOrderType('random')">�������</span></div><div class="right-order"><span style="border-right: 1px solid #DBDBDB;color:#707070;">ɸѡ&nbsp;</span><span id="reader-fav"></span></div><div style="clear: both;"></div></div>                    </div>
+
+                    <div style="width: 100%; margin-top: 10px">
+                        <div style="float: left; width: 800px;">
+                        <div class="nav">
+                                                        �� <span style="font-weight:bold;text-decoration:underline">���±���</span> ������<span style="color:red">沈念念 靳川</span>�����ҵ� 0 ƪ����<!--,��ʱ 0.02055 �� <span style="margin-left:50px"> </span>--></div>
+                            
+
+                            <div class="snav" style="margin-top: 10px;">�� <span onclick="other_search('baidu')" class="search_icon"><img src="//static.jjwxc.net/images/baidu_icon.gif" />�ٶ�</span><span onclick="other_search('bing')" class="search_icon"><img src="//static.jjwxc.net/images/bing_icon.gif" />��Ӧ</span>����</div>
+                        </div>
+                    </div>
+                    <div style="display:block;clear:both;"><br/></div>
+                    <div id="filterUninterestedAuthorTxt" style="display: none;color:#666666;font-size: 14px;margin-bottom: 10px;"></div>
+
+                    <div id="other_search">
+                        <div id="other_search_nav"><span id="other_search_nav_text" style="float:left"></span><span style="float:right;cursor:pointer;" onclick="document.getElementById('other_search').style.display = 'none';
+                                document.getElementById('search_result').style.display = ''"><< ���ر�վ�������</span></div>
+                        <div id="other_search_contain"><iframe id="other_search_frame" width="984" height="1600" frameborder="0" scroll="no"></iframe></div>
+                    </div>
+                    <!--jjwxc.net search result-->
+                    <div id="search_result">
+                        <div class="page"></div>
+                        <script type="text/javascript">other_search("bing")</script>                            <br /><br />
+                            <div class="page"> </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <script type="text/javascript">
+            // ���˲�����Ȥ������
+            if (getCookie('readerid')) {
+                $('#filterUninterestedAuthorTxt').show();
+            }
+        </script>
+        <style>
+    #footer div{
+        min-height: 20px;
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+    #footer_link_list span{
+        color: var(--default-color, black);
+    }
+</style>
+<div id="footer">
+    <div id="footer_link_list">
+        <p class="black"><a href="//www.jjwxc.net/aboutus/" target="_blank"><span>��������</span></a> - <a href="//www.jjwxc.net/aboutus/#fragment-29" target="_blank"><span>��ϵ��ʽ</span></a> - <a href="http://help.jjwxc.net/user/contact" target="_blank"><span>��ϵ�ͷ�</span></a> - <a href="http://help.jjwxc.net/user/more/24/0" target="_blank"><span>���ߵ���</span></a> - <a href="http://help.jjwxc.net/user/more/23/0" target="_blank"><span>���ߵ���</span></a> - <a href="//www.jjwxc.net/invite.php" target="_blank"><span>�����Ͳ�</span></a> - <a href="//www.jjwxc.net/jjwxcauthority.php" target="_blank"><span>Ȩ������</span></a> - <a href="//www.jjwxc.net/aboutus/#fragment-29" target="_blank"><span>������</span></a> - <a href="//www.jjwxc.net/friendly.php" target="_blank"><span>��������</span></a> - <a href="http://help.jjwxc.net/user/more_index" target="_blank"><span>��������</span></a>��<a href="http://help.jjwxc.net/user/article/183"><span>��Ϲ���</span></a></p>
+    </div>
+
+    
+    <div style="color: #AAAAAA;">Copyright By ������ѧ�� www.jjwxc.net All rights reserved </div>
+    <div style="color: #AAAAAA;">Processed in 0.00 second(s) �������2026-08-04 14:22:31</div>
+    <div style="color: #AAAAAA;">Υ������Ͷ��/δ����Ͷ������400-870-5552������Ͷ�߷�15300292289��Ͷ������help@jjwxc.com����ӭ���ಿ��ֱ���µ�֪ͨɾ��Υ������</div>
+    <div style="color: #AAAAAA;">��վ��Ʒ��ר����С˵�����ۡ����ӵȣ���Ȩ��Ϊԭ�������У���վ���ṩ�ϴ����洢��չʾ���ܡ���վ����¼��չʾ���ݼ��������������߹۵㣬�뱾վ�����޹ء�</div>
+    <div class="red">�������û���������ʱ�ϸ����ع�����ط��ɷ��档���Ǿܾ��κ�ɫ�鱩��������Υ�����ݣ�һ�����֣�����ɾ���������߽�ͬʱ����˺š�</div>
+    <div style="display: flex;min-height: 20px;align-items: center;width: 100%;justify-content: center;color: #AAAAAA;" >
+        <a href="https://beian.miit.gov.cn" target="_blank" rel="nofollow"><span style="color: #AAAAAA;padding-right: 6px;"> ��ICP֤080637��</span></a>
+        <a href="https://beian.miit.gov.cn" target="_blank" rel="nofollow">
+                            <span style="color: #AAAAAA;padding-right: 6px;"> ��ICP��12006214��-2</span>
+                    </a>
+        <span style="color: #AAAAAA;display: flex;align-items: center;"> <span style="display: inline-block;padding-right: 6px;">����֤�������ֵ�412��  </span>
+            <a target="_blank" href="//www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502023476" style="display: flex;align-items: center;height: 20px;"><img style="padding-top:0px;" src="//s8-static.jjwxc.net/images/recordicon.png" /><span style="color:#AAAAAA;">���������� 11010502023476��</span></a>
+        </span>
+        <!--������վͼƬLOGO��װ��ʼ-->
+        <a href="https://ss.knet.cn/verifyseal.dll?sn=e17082511010568698kvzl000000&pa=111332"
+           rel="nofollow"
+           tabindex="-1"
+           id="urlknet"
+           target="_blank">
+            <img alt="&#x53EF;&#x4FE1;&#x7F51;&#x7AD9;" name="KNET_seal" border="true" src="//static.jjwxc.net/images/kexinwang.png" style='width:55px;height:20px;padding-top: 0px' />
+        </a>
+        <!--������վͼƬLOGO��װ����-->
+    </div>
+    <div style="color: #AAAAAA;">�����鹹 ����ģ�� ��Ȩ���� ��Ȩ�ؾ� �ʶ��Ķ� ������� �������� ��������</div>
+</div>
+
+<!-- 360��� -->
+<script type="text/javascript" language="javascript" charset="utf-8" src="//static.mediav.com/js/mvf_g4.js"></script>
+
+<script type="text/javascript" src="//static.jjwxc.net/scripts/check.js?var=2023092103"></script>
+
+<script type="text/javascript">if (typeof (showTime)=='function') {
+        showTime();
+    }</script>
+                    <script>
+                        var obj = {
+                            'mediav_ad_pub': 'DA9f2R_2423268',
+                            'mediav_ad_width': '468',
+                            'mediav_ad_height': '60'
+                        };
+                        mediav.ad.show('top_banner_360', obj);
+                    </script>                <script>
+                    cookie = getCookie("jj_closeAd_top_banner_360");
+                    if (cookie!=undefined && cookie=='1') {
+                        $('#top_banner_360').next('.closeJJAd').remove();
+                        $('#top_banner_360').hide();
+                    }
+                </script>
+<div style="display:none;" class="cnzz">
+    <!-- �ٶ�ͳ�� -->
+    <script>
+        var _hmt = _hmt||[];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?bc3b748c21fe5cf393d26c12b2c38d99";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</div>
+<script>
+    function closeJJAd(that, domId) {
+        $(that).remove();
+        $('#'+domId).hide();
+        var d = new Date();
+        var expire = d.getFullYear()+'/'+(d.getMonth()+1)+'/'+d.getDate()+' 23:59:59';
+        setCookie('jj_closeAd_'+domId, 1, new Date(expire));
+    }
+</script>
+<script type="text/javascript" src="//static.jjwxc.net/scripts/shumeiDeviceIdSdk.js?var=2025072215"></script>
+<!--<script charset="utf-8" src="https://castatic.fengkongcloud.cn/pr/v1.0.3/smcp.min.js?version=20210415"></script>-->
+    </body>
+</html>

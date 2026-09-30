@@ -1,0 +1,37 @@
+{
+  "chapters": [
+    {
+      "chapter": 1,
+      "char_count": 365,
+      "confidence": 1.0
+    },
+    {
+      "chapter": 2,
+      "char_count": 228,
+      "confidence": 0.65
+    },
+    {
+      "chapter": 3,
+      "char_count": 540,
+      "confidence": 0.65
+    },
+    {
+      "chapter": 4,
+      "char_count": 603,
+      "confidence": 1.0
+    },
+    {
+      "chapter": 5,
+      "char_count": 350,
+      "confidence": 0.65
+    }
+  ],
+  "extra_content": [],
+  "snippets_count": 13,
+  "http_stats": {
+    "total": 19,
+    "success": 17,
+    "fail": 2,
+    "retries": 2
+  }
+}

@@ -1,0 +1,47 @@
+[
+  {
+    "url": "https://www.zhihu.com/api/v4/market/sections/1979959692122943787",
+    "source": "fuzz_r1",
+    "method": "GET",
+    "last_status": 403,
+    "last_cn": 52,
+    "added": "2026-08-03T20:53:16.949530",
+    "last_tested": "2026-08-03T20:53:43.428880"
+  },
+  {
+    "url": "https://api.zhihu.com/market/sections/1979959692122943787",
+    "source": "fuzz_r1",
+    "method": "GET",
+    "last_status": 404,
+    "last_cn": 0,
+    "added": "2026-08-03T20:53:19.319325",
+    "last_tested": "2026-08-03T20:53:47.496339"
+  },
+  {
+    "url": "https://www.zhihu.com/market/paid_column/1979976139138147736/section/1979959692122943787",
+    "source": "fuzz_r1",
+    "method": "GET",
+    "last_status": 200,
+    "last_cn": 193,
+    "added": "2026-08-03T20:53:21.765385",
+    "last_tested": "2026-08-03T20:53:39.530058"
+  },
+  {
+    "url": "https://api.zhihu.com/v1/market/sections/1979959692122943787",
+    "source": "fuzz_r2",
+    "method": "GET",
+    "last_status": 404,
+    "last_cn": 3,
+    "added": "2026-08-03T20:53:47.693979",
+    "last_tested": "2026-08-03T20:53:52.831649"
+  },
+  {
+    "url": "https://api.zhihu.com/v1/market/columns/1979976139138147736/sections/1979959692122943787",
+    "source": "fuzz_r2",
+    "method": "GET",
+    "last_status": 404,
+    "last_cn": 3,
+    "added": "2026-08-03T20:53:53.025755",
+    "last_tested": "2026-08-03T20:53:53.025763"
+  }
+]

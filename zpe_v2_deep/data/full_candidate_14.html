@@ -1,0 +1,3085 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        var resCode = '0'
+        var url = ''
+        if (resCode == 1500 && url) {
+            var back = encodeURIComponent(location.href)
+            url = url + '&backUrl=' + back
+            location.href = url
+        }
+    </script>
+    
+    <!-- end 页面直出变量 -->
+
+
+    
+<script>
+   var g_data = g_data || {};
+   g_data.site = 'hongxiu'
+
+   // 环境变量，会按照环境选择性打log
+   g_data.envType = 'pro';
+
+   //环境域名
+   g_data.rootDomain = 'hongxiu.com';
+   g_data.domain = '';
+   g_data.domainPreFix = '';
+
+   //静态资源域名
+   g_data.staticPath = '//yuxseocdn.yuewen.com/pro/hongxiu_pc/_prelease';
+
+   //获取用户是否登录
+   g_data.isLogin = '';
+
+   // 导流相关
+   g_data.appDownloadUrl = 'https://www.yuewen.com/app.html#appxx';
+   g_data.guide2app = 'qd';
+   g_data.guide2appXXLocationSite = '_hxpc';
+   g_data.isQReaderNoFreeBook = false;
+
+   // 是否支持登录
+   g_data.enableLogin = true;
+
+   // 是否支持充值 / 消费 / 打赏 / 投票等
+   g_data.enableChargeAndConsume = true;
+</script>
+
+    <script>
+      // 全局的通用数据都放g_data变量里
+      // 用作统计PV
+      var directCatalog = location.hash;
+
+      // 用作统计PV
+      g_data.pageId = 'hx_P_bookquery';
+
+      //上报用cbid
+      g_data.cbid = '3634897803597802';
+      g_data.qdbid = '20';
+
+      // 上报埋点前缀
+      g_data.pageIdPrefix = 'hx';
+
+      g_data.traceParam = 'hongxiu_bookquery';
+
+      g_data.pageJson = {
+        // 是否已登录，传入js，EJS后加载模板判断是否显示
+        isLogin:false,
+
+        // 获得bookId的json格式，传入js，EJS后加载模板中可以直接使用
+        bookId: '20',
+
+      }
+    </script>
+    <script>
+
+  function setCookie(name, value, domain, path, expires){
+    if(expires){
+      expires = new Date(+new Date() + expires);
+    }
+    var tempcookie = name + '=' + escape(value) +
+      ((expires) ? '; expires=' + expires.toGMTString() : '') +
+      ((path) ? '; path=' + path : '') +
+      ((domain) ? '; domain=' + domain : '');
+
+    //Ensure the cookie's size is under the limitation
+    if(tempcookie.length < 4096) {
+      document.cookie = tempcookie;
+    }
+  }
+
+  function setReferrer(referrerCookieName) {
+    try {
+      var reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+      var seoReferer = document.cookie.match(reg);
+      console.log("get cookie referrer: ", seoReferer)
+      if (seoReferer && seoReferer[2]) {
+        Object.defineProperty(document, "referrer", {
+          value: decodeURIComponent(seoReferer[2])
+        });
+        document.cookie = referrerCookieName + '=;domain=.' + g_data.rootDomain + ';path=/;expires=Thu, 01-Jan-1970 00:00:01 GMT';
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  }
+  function isMobile() {
+    return /(Android|iPhone|iPad|iPod|SymbianOS|Windows Phone|BlackBerry|OpenHarmony.*Mobile|Fennec|IEMobile)/i.test(navigator.userAgent);
+  }
+  function isSpider() {
+    return /(bot|spider|crawl|slurp|archiver|facebook|googlebot|bingbot|yandexbot|duckduckgo|twitterbot)/i.test(navigator.userAgent);
+  }
+
+  function jumpIfMobile(mPathName, referrerCookieName) {
+    //判断是移动设备 且 宽度小于1024 且 不是爬虫 后跳转到m站
+    if (
+      window.outerWidth <= 1024
+      && isMobile()
+      && !isSpider()
+      && location.host.indexOf('.qq.com') === -1
+    ) {
+      var url = location.protocol + "//" + location.host.replace("www.", "m.") + (mPathName || location.pathname)
+      var search = location.search.replace("?", "");
+      if (search) {
+        if (/source=m_jump/.test(search)) {
+          search = search.replace("source=m_jump", "source=pc_jump")
+        } else if (/source=pc_jump/.test(search)) {
+          // do nothing
+        } else {
+          search = (search + "&source=pc_jump")
+        }
+      } else {
+        search = "source=pc_jump"
+      }
+      url = url.indexOf("?") !== -1 ? (url + "&" + search) : (url + "?" + search);
+
+      console.log("set cookie referrer: ", document.referrer)
+      setCookie(referrerCookieName, document.referrer, '.' + g_data.rootDomain, '/', 60000);
+      window.location.href = url;
+    }
+  }
+
+  var referrerCookieName = "seo-jump-referrer";
+  setReferrer(referrerCookieName);
+  jumpIfMobile(window.mPath, referrerCookieName);
+</script>
+
+
+    <meta charset="UTF-8">
+    
+
+<title>靳川和孟娇蕊免费阅读_《紫川(紫川秀、流风霜)》最新章节在线阅读_全文完结免费无删减 - 红袖读书</title>
+<meta name="keywords" content="紫川秀, 流风霜, 紫川, 紫川txt, 紫川下载, 紫川全集, 紫川完本, 紫川免费">
+<meta name="description" content="靳川和孟娇蕊免费阅读（紫川秀、流风霜），《紫川》是老猪创作的玄幻类小说，书籍的主角是紫川秀、流风霜，全书314章完结，234万字，173万书友力荐。本书特色：布局流、废柴流、家族、群像。红袖读书提供《紫川》免费在线阅读，此外还提供《紫川》最新章节在线阅读。红袖读书为您创造《紫川》无广告、无弹窗、无错乱章节在线阅读。">
+
+<meta property="og:type" content="novel"/>
+<meta property="og:title" content="紫川"/>
+<meta property="og:description" content="靳川和孟娇蕊免费阅读（紫川秀、流风霜），《紫川》是老猪创作的玄幻类小说，书籍的主角是紫川秀、流风霜，全书314章完结，234万字，173万书友力荐。本书特色：布局流、废柴流、家族、群像。红袖读书提供《紫川》免费在线阅读，此外还提供《紫川》最新章节在线阅读。红袖读书为您创造《紫川》无广告、无弹窗、无错乱章节在线阅读。"/>
+<meta property="og:image" content="https://bookcover.yuewen.com/qdbimg/349573/20/150"/>
+<meta property="og:novel:category" content="玄幻"/>
+<meta property="og:novel:author" content="老猪"/>
+<meta property="og:novel:book_name" content="紫川"/>
+<meta property="og:novel:read_url" content="https://www.hongxiu.com/bookquery/pegtwzfoskiq"/>
+<meta property="og:url" content="https://www.hongxiu.com/bookquery/pegtwzfoskiq"/>
+<meta property="og:novel:status" content="完结"/>
+<meta property="og:novel:update_time" content="2026-07-03 15:56:25"/>
+<meta property="og:novel:latest_chapter_name" content="第三十二集 尘埃落定 第五章 重返帝都"/>
+<meta property="og:novel:latest_chapter_url" content="https://www.qidian.com/chapter/20/22752894/"/>
+
+    <meta name="robots" content="all">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit" />
+
+    
+    <!-- start mobile and canonical link related -->
+
+
+<meta http-equiv="mobile-agent" content="format=html5; url=https://m.hongxiu.com/bookquery/pegtwzfoskiq">
+<link rel="alternate" href="https://m.hongxiu.com/bookquery/pegtwzfoskiq">
+<link rel="canonical" href="https://www.hongxiu.com/bookquery/pegtwzfoskiq">
+
+
+    <!-- start header 钩子 -->
+    <meta name="applicable-device" content="pc">
+<!-- 移动设备访问PC端跳转的代码被删除 -->
+<!-- 跳转逻辑放在 static/component/mobileJump.js 中 -->
+<link rel="shortcut icon" type="image/x-icon" href="//yuxseocdn.yuewen.com/favicon/hongxiu.ico">
+<link rel="Bookmark" type="image/x-icon" href="//yuxseocdn.yuewen.com/favicon/hongxiu.ico">
+
+
+    <!-- end header 钩子 -->
+
+    <link rel="stylesheet" href="//yuxseocdn.yuewen.com/pro/hongxiu_pc/_prelease/css/lbfUI/css/icon.c9000.css">
+    <link rel="stylesheet" href="//yuxseocdn.yuewen.com/pro/hongxiu_pc/_prelease/css/lbfUI/css/Drag.41d31.css">
+    <link rel="stylesheet" href="//yuxseocdn.yuewen.com/pro/hongxiu_pc/_prelease/css/reset.0ea08.css">
+
+    <link rel="stylesheet" href="//yuxseocdn.yuewen.com/pro/hongxiu_pc/_prelease/css/font.a930e.css">
+    <link rel="stylesheet" href="//yuxseocdn.yuewen.com/pro/hongxiu_pc/_prelease/css/header.f7721.css">
+    <link rel="stylesheet" href="//yuxseocdn.yuewen.com/pro/hongxiu_pc/_prelease/css/module.c38f2.css">
+    <link rel="stylesheet" href="//yuxseocdn.yuewen.com/pro/hongxiu_pc/_prelease/css/footer.c22f8.css">
+    <link rel="stylesheet" href="//yuxseocdn.yuewen.com/pro/hongxiu_pc/_prelease/css/layout.89e5d.css">
+    <link rel="stylesheet" href="//yuxseocdn.yuewen.com/pro/hongxiu_pc/_prelease/css/popup.49ca7.css">
+    <link rel="stylesheet" href="//yuxseocdn.yuewen.com/pro/hongxiu_pc/_prelease/css/bookquery.cd2d9.css">
+</head>
+<body class="g_site_hongxiu">
+
+<!-- 页面注册时写入 _trace cookie -->
+<script>
+    (function () {
+        function setCookie(name, value, domain, path, expires) {
+            if(expires){
+                expires = new Date(+new Date() + expires);
+            }
+            var tempcookie = name + '=' + encodeURIComponent(value) +
+                        ((expires) ? '; expires=' + expires.toGMTString() : '') +
+                        ((path) ? '; path=' + path : '') +
+                        ((domain) ? '; domain=' + domain : '');
+                //Ensure the cookie's size is under the limitation
+            if(tempcookie.length < 4096) {
+                document.cookie = tempcookie;
+            }
+        }
+        try {
+            var traceValue = 'hongxiu_bookquery';
+            setCookie('_trace', encodeURIComponent(traceValue), '.hongxiu.com', '/', 7 * 24 * 60 * 60 * 1000)
+        } catch (e) {}
+    })();
+</script>
+
+
+<div class="wrap">
+    <!-- start 头部 -->
+    <div class="header">
+    
+    <!-- start 顶部 -->
+    <div class="top-head box-center cf">
+        <!-- start Logo -->
+        <div class="logo" title="红袖读书">
+            <a href="/"><em></em></a>
+        </div>
+        <!-- end Logo -->
+
+        <!-- start 搜索框 -->
+        <div class="search-wrap">
+            
+            <form class="cf" id="formUrl" action="/so" method="get" target="_blank">
+                <input class="search-box" id="s-box" name="kw" type="text" placeholder="" autocomplete="off" value="">
+                
+                    <input class="submit-input" type="submit" id="searchSubmit" data-eid=""><label id="search-btn" class="search-btn" for="searchSubmit"><em class="iconfont" data-eid="">&#xe604;</em></label>
+                
+            </form>
+        </div>
+        <!-- end 搜索框 -->
+        
+        <!-- start 用户专区 -->
+        <div class="user-wrap">
+            <div class="avatar" id="j-userWrap"><a class="link" href="javascript:" id="j-avatar"><img src="//yuxseocdn.yuewen.com/pro/hongxiu_pc/_prelease/images/ico/account.1e031.png"></a>
+
+                <!-- start 用户专区下拉框 -->
+                <div class="down-drop" id="j-userDownDrop">
+                    <dl>
+                        <dd><a href="javascript:" id="sign-out">退出</a></dd>
+                    </dl>
+                </div>
+                <!-- end 用户专区下拉框 -->
+            </div>
+            <ul>
+                <li><a class="head-msg" href="javascript:" title="消息中心"><em class="iconfont">&#xe902;</em></a></li>
+                <li><a class="head-shelf" href="javascript:"><em class="iconfont">&#xe62c;</em>我的书架</a></li>
+            </ul>
+        </div>
+        <!-- end 用户专区 -->
+        
+    </div>
+    <!-- end 顶部 -->
+    
+    
+    <!-- start 顶部导航 -->
+    <div class="top-nav-wrap">
+        <div class="box-center cf">
+            <div class="left-nav fl">
+                <ul class="cf">
+                    <li class="type " id="j-navType"><a href="/category"><em class="iconfont">&#xe612;</em>全部分类</a>
+                        
+                        <div class="type-list" id="j-typeList">
+                            <cite></cite>
+                            <dl>
+                                <dd><a href="/category/30020_f1_f1_f1_f1_f1_0_1"><em class="iconfont">&#xe630;</em><i>现代言情</i></a></dd>
+                                <dd><a href="/category/30013_f1_f1_f1_f1_f1_0_1"><em class="iconfont">&#xe632;</em><i>古代言情</i></a></dd>
+                                <dd><a href="/category/30031_f1_f1_f1_f1_f1_0_1"><em class="iconfont">&#xe631;</em><i>浪漫青春</i></a></dd>
+                                <dd><a href="/category/30001_f1_f1_f1_f1_f1_0_1"><em class="iconfont">&#xe637;</em><i>玄幻言情</i></a></dd>
+                                <dd><a href="/category/30008_f1_f1_f1_f1_f1_0_1"><em class="iconfont">&#xe62e;</em><i>仙侠奇缘</i></a></dd>
+                                <dd><a href="/category/30036_f1_f1_f1_f1_f1_0_1"><em class="iconfont">&#xe634;</em><i>悬疑</i></a></dd>
+                                <dd><a href="/category/30042_f1_f1_f1_f1_f1_0_1"><em class="iconfont">&#xe62d;</em><i>科幻空间</i></a></dd>
+                                <dd><a href="/category/30050_f1_f1_f1_f1_f1_0_1"><em class="iconfont">&#xe638;</em><i>游戏竞技</i></a></dd>
+                                <dd><a href="/category/30083_f1_f1_f1_f1_f1_0_1"><em class="iconfont">&#xe63b;</em>短篇小说</a></dd>
+                                <dd><a href="/category/30055_f1_f1_f1_f1_f1_0_1"><em class="iconfont">&#xe904;</em><i>轻小说</i></a></dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li class=""><a href="/rank">排行榜</a></li>
+                    <li class=""><a href="/free">免费</a></li>
+                    <li class=""><a href="/finish">完本</a></li>
+                    <li class=""><a href="/baike">百科</a></li>
+                    <li><a href="/gdyq">古言</a></li>
+                    <li><a href="/xdyq">现言</a></li>
+                    <li><a href="/xhxx">玄幻仙侠</a></li>
+                    <li><a href="/lykh">悬疑科幻</a></li>
+                    <li><a href="/qcyx">青春游戏</a></li>
+                    <li><a href="/fsg">风尚阁</a></li>
+
+                    
+
+                        <!-- 临时将 版权专区 改为 动漫专区 （审核） -->
+                        <li class=""><a href="/z/comic" rel="nofollow">动漫专区</a></li>
+                        <!-- 临时将 版权专区 改为 动漫专区 （审核） -->
+                    
+                </ul>
+            </div>
+            <div class="right-nav fr">
+                <!-- 删除 _blank 修复未登录时跳到空白页面 -->
+<!--                <a class="j-goCharge" href="javascript:"><em class="iconfont">&#xe60f;</em>充值</a>-->
+                <a href="//write.qq.com?siteid=6" target="_blank"><em class="iconfont">&#xe62a;</em>作家专区</a>
+        </div>
+    </div>
+    </div>
+    <!-- end 顶部导航 -->
+
+    
+</div>
+
+    <!-- end 头部 -->
+
+    <div class="wrap-body">
+
+        <!-- start 书详情容器-->
+        <div class="book-detail-wrap center1020">
+
+            <h1 class="keyword">靳川和孟娇蕊免费阅读</h1>
+
+            <!-- start 书详情-->
+            <section class="book-information cf df">
+
+    <!-- start 书封 -->
+    <div class="book-img">
+        <div class="J-getJumpUrl default" id="bookImg" data-bid="20" data-firstchapterjumpurl="">
+            
+                <img src="//bookcover.yuewen.com/qdbimg/349573/20/180">
+            
+        </div>
+    </div>
+    <!-- end 书封 -->
+
+    <!-- start 书信息 -->
+    <div class="book-info">
+        <span class="unfold down" id="j-moreIntro">
+            <b></b>
+            <span>
+            <em class="iconfont down">&#xe623;</em><em class="iconfont up">&#xe622;</em><cite>展开</cite>
+            </span>
+        </span>
+        
+        <h2 class="book-title">紫川(紫川秀、流风霜)</h2>
+        <p class="book-author writer default cont">作者：老猪</p>
+
+        <p class="book-tags tag-box">
+            <span class="tag">
+                <i>玄幻</i><i>王朝争霸</i></span>
+        </p>
+        
+            <p class="book-total total">
+                
+                <span>234万字</span><i>|</i>
+                <span>完结</span><i>|</i>
+                <span>2026-07-03 15:56 更新</span>
+            </p>
+        
+        <p class="intro">
+            
+            　　两百年前的蓝河战场，光明帝国最后的军团在魔族的喧嚣声中崩溃，帝国最后的皇帝战死。混乱的西川大陆上没有了共同的君主，群雄并起而混战，武力是生存下去的唯一本钱，制霸天下，是一代代强者的梦想。<br><br>　　大陆东南，有一个两百多年的强大势力——紫川家族。他西击流风家，东挡魔族，南镇林家。为了强大的梦想，为了家族血统的薪火相传，无数紫川俊杰前仆后继，谱写了一曲的史诗般壮丽的历史。本文《紫川》，讲述的就是这么一个家族的百年悲歌传奇。
+        </p>
+        
+        
+        <p class="book-btns btn">
+            <a class="read-btn" href="https://www.qidian.com/chapter/20/61/">立即阅读</a>
+            <a class="catalog-btn" href="https://www.qidian.com/chapter/20/catalog/">目录</a>
+        </p>
+        
+    </div>
+    <!-- end 书信息 -->
+
+    
+    <div class="book-stats">
+        热度：
+        <span class="book-stats-value">
+            <strong>173</strong>
+        万
+        </span>
+    </div>
+    
+
+</section>
+
+            <!-- end 书详情-->
+
+            
+            <section class="section more-book-rec mt12">
+                <h2 class="section-title">相关推荐</h2>
+                <ul class="link-list">
+                    
+                    
+                    <li class="link-item">
+                        <a href="/bookquery/qbzfhvlwamcl" class="link-name">
+                            紫川TXT下载网盘
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="link-item">
+                        <a href="/bookquery/petuxafoenqb" class="link-name">
+                            乔念叶妄川全文免费阅读
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="link-item">
+                        <a href="/bookquery/qbcldygtrhxa" class="link-name">
+                            紫川老猪
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="link-item">
+                        <a href="/bookquery/petuxazfiqkg" class="link-name">
+                            樊梨花穆桂英紫玉盏小说
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="link-item">
+                        <a href="/bookquery/qbzfhvlwfobp" class="link-name">
+                            紫川大结局全集阅读
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="link-item">
+                        <a href="/bookquery/pegtwzyclwdy" class="link-name">
+                            腌臜万紫千红的小说免费阅读
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="link-item">
+                        <a href="/bookquery/qbzfhvlwbpzf" class="link-name">
+                            紫川未删减全本txt下载
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="link-item">
+                        <a href="/bookquery/qbzfhvlwfoiq" class="link-name">
+                            紫川女主
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="link-item">
+                        <a href="/bookquery/petuxaycycjd" class="link-name">
+                            乔念叶妄川小说免费阅读
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="link-item">
+                        <a href="/bookquery/zfnjzfamiqtu" class="link-name">
+                            zichuan紫川秀
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="link-item">
+                        <a href="/bookquery/petuxadyenjd" class="link-name">
+                            等星星坠落 陌言川
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="link-item">
+                        <a href="/bookquery/petuxazfhvtu" class="link-name">
+                            紫屋魔恋
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="link-item">
+                        <a href="/bookquery/pegtwzgtqbiq" class="link-name">
+                            萧凌川姜姝瑶小说全集免费阅读
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="link-item">
+                        <a href="/bookquery/pehvkglwurhv" class="link-name">
+                            紫鱼得宠
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="link-item">
+                        <a href="/bookquery/petuqbmiclqb" class="link-name">
+                            二川川的全部小说作品
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="link-item">
+                        <a href="/bookquery/petuxabphvur" class="link-name">
+                            边关兵魂凌川全文免费阅读
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="link-item">
+                        <a href="/bookquery/qbzfhvlwbppe" class="link-name">
+                            紫川在线阅读
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="link-item">
+                        <a href="/bookquery/pegtwzoslwbp" class="link-name">
+                            路辰穆紫萱楚语琴的小说
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="link-item">
+                        <a href="/bookquery/qbzfhvlwfoen" class="link-name">
+                            紫川正版免费阅读全文
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="link-item">
+                        <a href="/bookquery/petuxahvbpyc" class="link-name">
+                            婚吻青梅明枝迟砚川免费阅读
+                        </a>
+                    </li>
+                    
+                </ul>
+            </section>
+            
+
+            <!-- 热评讨论 -->
+            
+<section class="section review-list mt12">
+    <h2 class="section-title">热评讨论</h2>
+    <ul class="review-cards">
+        
+        <li class="review-card">
+            <p class="review-text">1.规律因为有秩序得以体现和实现，所以区域无序，规律就不在区域体现和实现，所以区域的秩序不同，体现和实现的规律就不同。2.世界和异世界都是宇宙中的时空区域，这些时空区域的秩序不同，所以体现和实现的规律</p>
+            <div class="review-foot">
+                <span class="review-user">
+                    <img class="review-avatar" src="https://imgservices-1252317822.image.myqcloud.com/coco/s06182024/3a81eb5d.i471u6.png" alt="" />
+                    <span class="review-username">起点用户</span>
+                </span>
+                <span class="review-meta">
+                    <span class="review-reply">0评论</span>
+                    <span class="review-support">点赞0</span>
+                </span>
+            </div>
+        </li>
+        
+        <li class="review-card">
+            <p class="review-text">1.世界和异世界都是宇宙中的封闭系统，这些封闭系统的秩序运动不同，所以体现和实现的规律不同，所以自然环境不同，所以生命不同，所以文明不同，所以文明的系统性方法论和技术不同。2.没有平行时空和有平行时空</p>
+            <div class="review-foot">
+                <span class="review-user">
+                    <img class="review-avatar" src="https://imgservices-1252317822.image.myqcloud.com/coco/s06182024/3a81eb5d.i471u6.png" alt="" />
+                    <span class="review-username">起点用户</span>
+                </span>
+                <span class="review-meta">
+                    <span class="review-reply">0评论</span>
+                    <span class="review-support">点赞0</span>
+                </span>
+            </div>
+        </li>
+        
+        <li class="review-card">
+            <p class="review-text">小说中的宗门应该是创始者为了完善自己开创的功法和对应功法的法术，还有利用集体的力量助自己修行开创的，而且宗门运行的道德有时代局限，在所在时代对道德的共识中道德高的是正道，道德低的是魔道。宗门是宗师为了</p>
+            <div class="review-foot">
+                <span class="review-user">
+                    <img class="review-avatar" src="https://imgservices-1252317822.image.myqcloud.com/coco/s06182024/3a81eb5d.i471u6.png" alt="" />
+                    <span class="review-username">起点用户</span>
+                </span>
+                <span class="review-meta">
+                    <span class="review-reply">0评论</span>
+                    <span class="review-support">点赞0</span>
+                </span>
+            </div>
+        </li>
+        
+    </ul>
+</section>
+
+
+
+
+            
+
+            
+                
+                    
+<section class="section chapterlist catalog_collapse_wrap">
+    <h2 class="section-title">目录 · 共314章</h2>
+    
+    <div class="volume">
+        <div class="cover"></div>
+        
+        <h3 class="collapse_hidden">
+            第一章<i>&#183;</i>共8章<span class="free"> 免费</span>
+        </h3>
+        <ul class="cf">
+            
+            <li data-rid="1" class="">
+                <a href="https://www.qidian.com/chapter/20/61/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/61/" title="首发时间：4 年前 章节字数：1930">第一节 胜利</a>
+                
+            </li>
+            
+            <li data-rid="2" class="">
+                <a href="https://www.qidian.com/chapter/20/65/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/65/" title="首发时间：4 年前 章节字数：2374">第二节 历史的真相</a>
+                
+            </li>
+            
+            <li data-rid="3" class="">
+                <a href="https://www.qidian.com/chapter/20/66/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/66/" title="首发时间：7 年前 章节字数：2020">第三节 大收获</a>
+                
+            </li>
+            
+            <li data-rid="4" class="">
+                <a href="https://www.qidian.com/chapter/20/67/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/67/" title="首发时间：9 年前 章节字数：2171">第四节 真面目</a>
+                
+            </li>
+            
+            <li data-rid="5" class="">
+                <a href="https://www.qidian.com/chapter/20/68/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/68/" title="首发时间：23 年前 章节字数：2694">第五节 英雄归来</a>
+                
+            </li>
+            
+            <li data-rid="6" class="">
+                <a href="https://www.qidian.com/chapter/20/69/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/69/" title="首发时间：23 年前 章节字数：1846">第六节 晋升</a>
+                
+            </li>
+            
+            <li data-rid="7" class="">
+                <a href="https://www.qidian.com/chapter/20/70/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/70/" title="首发时间：23 年前 章节字数：3881">第七节 往事</a>
+                
+            </li>
+            
+            <li data-rid="8" class="">
+                <a href="https://www.qidian.com/chapter/20/71/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/71/" title="首发时间：23 年前 章节字数：2261">第八节 秀字营</a>
+                
+            </li>
+            
+        </ul>
+
+        
+            <div class="catalog-more j_open_catalog">查看更多 <em class="iconfont down">&#xe623;</em> </div>
+        
+    </div>
+    
+    <div class="volume">
+        <div class="cover"></div>
+        
+        <h3 class="collapse_hidden">
+            第二章<i>&#183;</i>共8章<span class="free"> 免费</span>
+        </h3>
+        <ul class="cf">
+            
+            <li data-rid="1" class="">
+                <a href="https://www.qidian.com/chapter/20/72/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/72/" title="首发时间：23 年前 章节字数：2692">第一节 重返帝都</a>
+                
+            </li>
+            
+            <li data-rid="2" class="">
+                <a href="https://www.qidian.com/chapter/20/76/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/76/" title="首发时间：23 年前 章节字数：1633">第二节 紫川宁</a>
+                
+            </li>
+            
+            <li data-rid="3" class="">
+                <a href="https://www.qidian.com/chapter/20/78/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/78/" title="首发时间：23 年前 章节字数：2313">第三节 人事</a>
+                
+            </li>
+            
+            <li data-rid="4" class="">
+                <a href="https://www.qidian.com/chapter/20/80/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/80/" title="首发时间：23 年前 章节字数：1670">第四节 深情</a>
+                
+            </li>
+            
+            <li data-rid="5" class="">
+                <a href="https://www.qidian.com/chapter/20/83/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/83/" title="首发时间：23 年前 章节字数：3675">第五节 统领处</a>
+                
+            </li>
+            
+            <li data-rid="6" class="">
+                <a href="https://www.qidian.com/chapter/20/85/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/85/" title="首发时间：23 年前 章节字数：3489">第六节 会议</a>
+                
+            </li>
+            
+            <li data-rid="7" class="">
+                <a href="https://www.qidian.com/chapter/20/87/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/87/" title="首发时间：23 年前 章节字数：2382">第七节 决斗</a>
+                
+            </li>
+            
+            <li data-rid="8" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/90/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/90/" title="首发时间：23 年前 章节字数：3513">第八节 卑鄙无耻的家伙</a>
+                
+            </li>
+            
+        </ul>
+
+        
+    </div>
+    
+    <div class="volume">
+        <div class="cover"></div>
+        
+        <h3 class="collapse_hidden">
+            第三章<i>&#183;</i>共8章<span class="free"> 免费</span>
+        </h3>
+        <ul class="cf">
+            
+            <li data-rid="1" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/92/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/92/" title="首发时间：23 年前 章节字数：3977">第一节 聊天</a>
+                
+            </li>
+            
+            <li data-rid="2" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/95/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/95/" title="首发时间：23 年前 章节字数：2912">第二节 人最怕就是动了情</a>
+                
+            </li>
+            
+            <li data-rid="3" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/97/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/97/" title="首发时间：23 年前 章节字数：2610">第三节 新来的副处长</a>
+                
+            </li>
+            
+            <li data-rid="4" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/100/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/100/" title="首发时间：23 年前 章节字数：3358">第四节 紫川参星</a>
+                
+            </li>
+            
+            <li data-rid="5" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/102/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/102/" title="首发时间：23 年前 章节字数：2016">第五节 名将·色狼</a>
+                
+            </li>
+            
+            <li data-rid="6" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/104/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/104/" title="首发时间：23 年前 章节字数：4216">第六节 战争与爱情</a>
+                
+            </li>
+            
+            <li data-rid="7" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/107/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/107/" title="首发时间：23 年前 章节字数：2252">第七节 风雨将至</a>
+                
+            </li>
+            
+            <li data-rid="8" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/109/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/109/" title="首发时间：23 年前 章节字数：1900">第八节 恩爱</a>
+                
+            </li>
+            
+        </ul>
+
+        
+    </div>
+    
+    <div class="volume">
+        <div class="cover"></div>
+        
+        <h3 class="collapse_hidden">
+            第四章<i>&#183;</i>共8章<span class="free"> 免费</span>
+        </h3>
+        <ul class="cf">
+            
+            <li data-rid="1" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/113/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/113/" title="首发时间：23 年前 章节字数：3548">第一节 喋血</a>
+                
+            </li>
+            
+            <li data-rid="2" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/114/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/114/" title="首发时间：23 年前 章节字数：4385">第二节 流血前幕</a>
+                
+            </li>
+            
+            <li data-rid="3" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/115/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/115/" title="首发时间：23 年前 章节字数：3923">第三节 刺杀</a>
+                
+            </li>
+            
+            <li data-rid="4" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/116/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/116/" title="首发时间：4 年前 章节字数：4684">第四节 夺兵权</a>
+                
+            </li>
+            
+            <li data-rid="5" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/118/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/118/" title="首发时间：23 年前 章节字数：1375">第五节 帝林进城</a>
+                
+            </li>
+            
+            <li data-rid="6" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/120/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/120/" title="首发时间：23 年前 章节字数：2311">第六节 帝都流血夜</a>
+                
+            </li>
+            
+            <li data-rid="7" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/122/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/122/" title="首发时间：23 年前 章节字数：2871">第七节 大清洗</a>
+                
+            </li>
+            
+            <li data-rid="8" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/125/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/125/" title="首发时间：23 年前 章节字数：3100">第八节 灯光</a>
+                
+            </li>
+            
+        </ul>
+
+        
+    </div>
+    
+    <div class="volume">
+        <div class="cover"></div>
+        
+        <h3 class="collapse_hidden">
+            第五章<i>&#183;</i>共8章<span class="free"> 免费</span>
+        </h3>
+        <ul class="cf">
+            
+            <li data-rid="1" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/127/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/127/" title="首发时间：23 年前 章节字数：3283">第一节 安定</a>
+                
+            </li>
+            
+            <li data-rid="2" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/128/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/128/" title="首发时间：23 年前 章节字数：2471">第二节 乱起</a>
+                
+            </li>
+            
+            <li data-rid="3" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/129/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/129/" title="首发时间：4 年前 章节字数：3148">第三节 小叛乱</a>
+                
+            </li>
+            
+            <li data-rid="4" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/130/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/130/" title="首发时间：23 年前 章节字数：2760">第四节 房地产投资</a>
+                
+            </li>
+            
+            <li data-rid="5" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/131/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/131/" title="首发时间：23 年前 章节字数：3201">第五节 从赤水滩到瓦伦</a>
+                
+            </li>
+            
+            <li data-rid="6" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/132/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/132/" title="首发时间：23 年前 章节字数：3810">第六节 告白</a>
+                
+            </li>
+            
+            <li data-rid="7" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/133/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/133/" title="首发时间：4 年前 章节字数：4591">第七节 瓦伦大捷</a>
+                
+            </li>
+            
+            <li data-rid="8" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/134/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/134/" title="首发时间：23 年前 章节字数：3590">第八节 秀字营是如何成立的</a>
+                
+            </li>
+            
+        </ul>
+
+        
+    </div>
+    
+    <div class="volume">
+        <div class="cover"></div>
+        
+        <h3 class="collapse_hidden">
+            第六章<i>&#183;</i>共8章<span class="free"> 免费</span>
+        </h3>
+        <ul class="cf">
+            
+            <li data-rid="1" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/135/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/135/" title="首发时间：23 年前 章节字数：2600">第一节 紫川之虎</a>
+                
+            </li>
+            
+            <li data-rid="2" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/136/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/136/" title="首发时间：23 年前 章节字数：3109">第二节 预备队民军</a>
+                
+            </li>
+            
+            <li data-rid="3" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/137/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/137/" title="首发时间：23 年前 章节字数：5016">第三节 我到、我见、我退</a>
+                
+            </li>
+            
+            <li data-rid="4" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/138/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/138/" title="首发时间：23 年前 章节字数：5348">第四节 第一高手</a>
+                
+            </li>
+            
+            <li data-rid="5" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/139/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/139/" title="首发时间：23 年前 章节字数：6378">第五节 机密</a>
+                
+            </li>
+            
+            <li data-rid="6" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/140/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/140/" title="首发时间：3 年前 章节字数：5177">第六节 远东旧事</a>
+                
+            </li>
+            
+            <li data-rid="7" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/142/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/142/" title="首发时间：23 年前 章节字数：6964">第七节 临别</a>
+                
+            </li>
+            
+            <li data-rid="8" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/144/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/144/" title="首发时间：23 年前 章节字数：6773">第八节 丛林</a>
+                
+            </li>
+            
+        </ul>
+
+        
+    </div>
+    
+    <div class="volume">
+        <div class="cover"></div>
+        
+        <h3 class="collapse_hidden">
+            第七章<i>&#183;</i>共8章<span class="free"> 免费</span>
+        </h3>
+        <ul class="cf">
+            
+            <li data-rid="1" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/146/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/146/" title="首发时间：23 年前 章节字数：3630">第一节 征途</a>
+                
+            </li>
+            
+            <li data-rid="2" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/150/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/150/" title="首发时间：23 年前 章节字数：6013">第二节 秀字营剿匪</a>
+                
+            </li>
+            
+            <li data-rid="3" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/152/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/152/" title="首发时间：23 年前 章节字数：5700">第三节 紫川秀致富</a>
+                
+            </li>
+            
+            <li data-rid="4" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/154/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/154/" title="首发时间：23 年前 章节字数：5918">第四节 豪门宴席</a>
+                
+            </li>
+            
+            <li data-rid="5" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/157/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/157/" title="首发时间：23 年前 章节字数：8053">第五节 正义</a>
+                
+            </li>
+            
+            <li data-rid="6" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/159/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/159/" title="首发时间：23 年前 章节字数：7778">第六节 联合会议</a>
+                
+            </li>
+            
+            <li data-rid="7" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/162/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/162/" title="首发时间：4 年前 章节字数：8508">第七节 元老会议</a>
+                
+            </li>
+            
+            <li data-rid="8" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/164/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/164/" title="首发时间：23 年前 章节字数：6134">第八节 重逢</a>
+                
+            </li>
+            
+        </ul>
+
+        
+    </div>
+    
+    <div class="volume">
+        <div class="cover"></div>
+        
+        <h3 class="collapse_hidden">
+            第八章<i>&#183;</i>共8章<span class="free"> 免费</span>
+        </h3>
+        <ul class="cf">
+            
+            <li data-rid="1" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/168/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/168/" title="首发时间：23 年前 章节字数：10813">第一节 幸福</a>
+                
+            </li>
+            
+            <li data-rid="2" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/170/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/170/" title="首发时间：23 年前 章节字数：9123">第二节 摊牌</a>
+                
+            </li>
+            
+            <li data-rid="3" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/172/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/172/" title="首发时间：9 年前 章节字数：7411">第三节 岁末</a>
+                
+            </li>
+            
+            <li data-rid="4" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/174/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/174/" title="首发时间：23 年前 章节字数：3863">第四节 天崩</a>
+                
+            </li>
+            
+            <li data-rid="5" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/175/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/175/" title="首发时间：23 年前 章节字数：8070">第五节 狂澜</a>
+                
+            </li>
+            
+            <li data-rid="6" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/176/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/176/" title="首发时间：23 年前 章节字数：7537">第六节 魔族</a>
+                
+            </li>
+            
+            <li data-rid="7" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/177/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/177/" title="首发时间：23 年前 章节字数：3905">第七节 反攻</a>
+                
+            </li>
+            
+            <li data-rid="8" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/179/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/179/" title="首发时间：23 年前 章节字数：5934">第八节 夜袭</a>
+                
+            </li>
+            
+        </ul>
+
+        
+    </div>
+    
+    <div class="volume">
+        <div class="cover"></div>
+        
+        <h3 class="collapse_hidden">
+            第九章<i>&#183;</i>共8章<span class="free"> 免费</span>
+        </h3>
+        <ul class="cf">
+            
+            <li data-rid="1" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/182/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/182/" title="首发时间：23 年前 章节字数：6143">第一节 前奏</a>
+                
+            </li>
+            
+            <li data-rid="2" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/184/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/184/" title="首发时间：23 年前 章节字数：6290">第二节 帕伊会战</a>
+                
+            </li>
+            
+            <li data-rid="3" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/187/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/187/" title="首发时间：7 年前 章节字数：7177">第三节 铁甲骑兵</a>
+                
+            </li>
+            
+            <li data-rid="4" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/189/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/189/" title="首发时间：23 年前 章节字数：12342">第四节 苦战</a>
+                
+            </li>
+            
+            <li data-rid="5" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/191/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/191/" title="首发时间：23 年前 章节字数：5547">第五节 瓦伦</a>
+                
+            </li>
+            
+            <li data-rid="6" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/193/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/193/" title="首发时间：23 年前 章节字数：6666">第六节 恶魔帝林</a>
+                
+            </li>
+            
+            <li data-rid="7" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/195/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/195/" title="首发时间：23 年前 章节字数：7332">第七节</a>
+                
+            </li>
+            
+            <li data-rid="8" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/197/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/197/" title="首发时间：23 年前 章节字数：7249">第八节</a>
+                
+            </li>
+            
+        </ul>
+
+        
+    </div>
+    
+    <div class="volume">
+        <div class="cover"></div>
+        
+        <h3 class="collapse_hidden">
+            第十章<i>&#183;</i>共8章<span class="free"> 免费</span>
+        </h3>
+        <ul class="cf">
+            
+            <li data-rid="1" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/200/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/200/" title="首发时间：23 年前 章节字数：8852">第一节</a>
+                
+            </li>
+            
+            <li data-rid="2" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/202/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/202/" title="首发时间：23 年前 章节字数：6763">第二节</a>
+                
+            </li>
+            
+            <li data-rid="3" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/204/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/204/" title="首发时间：23 年前 章节字数：7394">第三节</a>
+                
+            </li>
+            
+            <li data-rid="4" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/206/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/206/" title="首发时间：23 年前 章节字数：5058">第四节</a>
+                
+            </li>
+            
+            <li data-rid="5" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/208/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/208/" title="首发时间：23 年前 章节字数：3337">第五节</a>
+                
+            </li>
+            
+            <li data-rid="6" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/209/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/209/" title="首发时间：23 年前 章节字数：5731">第六节</a>
+                
+            </li>
+            
+            <li data-rid="7" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/211/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/211/" title="首发时间：23 年前 章节字数：5642">第七节</a>
+                
+            </li>
+            
+            <li data-rid="8" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/214/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/214/" title="首发时间：23 年前 章节字数：10819">第八节</a>
+                
+            </li>
+            
+        </ul>
+
+        
+    </div>
+    
+    <div class="volume">
+        <div class="cover"></div>
+        
+        <h3 class="collapse_hidden">
+            第十一章<i>&#183;</i>共8章<span class="free"> 免费</span>
+        </h3>
+        <ul class="cf">
+            
+            <li data-rid="1" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/219/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/219/" title="首发时间：23 年前 章节字数：11570">第一节</a>
+                
+            </li>
+            
+            <li data-rid="2" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/220/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/220/" title="首发时间：23 年前 章节字数：6757">第二节</a>
+                
+            </li>
+            
+            <li data-rid="3" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/221/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/221/" title="首发时间：23 年前 章节字数：10832">第三节</a>
+                
+            </li>
+            
+            <li data-rid="4" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/228/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/228/" title="首发时间：23 年前 章节字数：9087">第四节</a>
+                
+            </li>
+            
+            <li data-rid="5" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/238/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/238/" title="首发时间：23 年前 章节字数：5448">第五节</a>
+                
+            </li>
+            
+            <li data-rid="6" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/241/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/241/" title="首发时间：23 年前 章节字数：8238">第六节</a>
+                
+            </li>
+            
+            <li data-rid="7" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/243/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/243/" title="首发时间：23 年前 章节字数：9435">第七节</a>
+                
+            </li>
+            
+            <li data-rid="8" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/245/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/245/" title="首发时间：23 年前 章节字数：5957">第八节</a>
+                
+            </li>
+            
+        </ul>
+
+        
+    </div>
+    
+    <div class="volume">
+        <div class="cover"></div>
+        
+        <h3 class="collapse_hidden">
+            第十二章<i>&#183;</i>共8章<span class="free"> 免费</span>
+        </h3>
+        <ul class="cf">
+            
+            <li data-rid="1" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/248/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/248/" title="首发时间：23 年前 章节字数：2490">第一节</a>
+                
+            </li>
+            
+            <li data-rid="2" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/250/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/250/" title="首发时间：23 年前 章节字数：1967">第二节</a>
+                
+            </li>
+            
+            <li data-rid="3" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/253/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/253/" title="首发时间：23 年前 章节字数：3174">第三节</a>
+                
+            </li>
+            
+            <li data-rid="4" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/254/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/254/" title="首发时间：23 年前 章节字数：3953">第四节</a>
+                
+            </li>
+            
+            <li data-rid="5" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/255/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/255/" title="首发时间：23 年前 章节字数：6783">第五节</a>
+                
+            </li>
+            
+            <li data-rid="6" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/256/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/256/" title="首发时间：23 年前 章节字数：5545">第六节</a>
+                
+            </li>
+            
+            <li data-rid="7" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/258/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/258/" title="首发时间：23 年前 章节字数：1892">第七节</a>
+                
+            </li>
+            
+            <li data-rid="8" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/260/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/260/" title="首发时间：23 年前 章节字数：7616">第八节</a>
+                
+            </li>
+            
+        </ul>
+
+        
+    </div>
+    
+    <div class="volume">
+        <div class="cover"></div>
+        
+        <h3 class="collapse_hidden">
+            第十三章<i>&#183;</i>共6章<span class="free"> 免费</span>
+        </h3>
+        <ul class="cf">
+            
+            <li data-rid="1" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/266/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/266/" title="首发时间：23 年前 章节字数：3790">第一节</a>
+                
+            </li>
+            
+            <li data-rid="2" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/268/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/268/" title="首发时间：23 年前 章节字数：4380">第二节</a>
+                
+            </li>
+            
+            <li data-rid="3" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/270/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/270/" title="首发时间：23 年前 章节字数：3311">第三节</a>
+                
+            </li>
+            
+            <li data-rid="4" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/275/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/275/" title="首发时间：23 年前 章节字数：2277">第四节</a>
+                
+            </li>
+            
+            <li data-rid="5" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/277/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/277/" title="首发时间：23 年前 章节字数：3585">第五节</a>
+                
+            </li>
+            
+            <li data-rid="6" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/279/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/279/" title="首发时间：23 年前 章节字数：3404">第六节</a>
+                
+            </li>
+            
+        </ul>
+
+        
+    </div>
+    
+    <div class="volume">
+        <div class="cover"></div>
+        
+        <h3 class="collapse_hidden">
+            第十四章<i>&#183;</i>共8章<span class="free"> 免费</span>
+        </h3>
+        <ul class="cf">
+            
+            <li data-rid="1" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/282/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/282/" title="首发时间：23 年前 章节字数：4951">第一节</a>
+                
+            </li>
+            
+            <li data-rid="2" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/287/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/287/" title="首发时间：23 年前 章节字数：13418">第二节</a>
+                
+            </li>
+            
+            <li data-rid="3" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/288/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/288/" title="首发时间：23 年前 章节字数：12057">第三节</a>
+                
+            </li>
+            
+            <li data-rid="4" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/289/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/289/" title="首发时间：23 年前 章节字数：11141">第四节</a>
+                
+            </li>
+            
+            <li data-rid="5" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/292/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/292/" title="首发时间：23 年前 章节字数：10435">第五节</a>
+                
+            </li>
+            
+            <li data-rid="6" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/294/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/294/" title="首发时间：7 年前 章节字数：13417">第六节</a>
+                
+            </li>
+            
+            <li data-rid="7" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/300/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/300/" title="首发时间：23 年前 章节字数：6654">第七节</a>
+                
+            </li>
+            
+            <li data-rid="8" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/303/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/303/" title="首发时间：23 年前 章节字数：5066">第八节</a>
+                
+            </li>
+            
+        </ul>
+
+        
+    </div>
+    
+    <div class="volume">
+        <div class="cover"></div>
+        
+        <h3 class="collapse_hidden">
+            第十五章<i>&#183;</i>共8章<span class="free"> 免费</span>
+        </h3>
+        <ul class="cf">
+            
+            <li data-rid="1" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/304/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/304/" title="首发时间：23 年前 章节字数：10279">第一节</a>
+                
+            </li>
+            
+            <li data-rid="2" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/305/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/305/" title="首发时间：9 年前 章节字数：9242">第二节</a>
+                
+            </li>
+            
+            <li data-rid="3" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/306/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/306/" title="首发时间：23 年前 章节字数：8776">第三节</a>
+                
+            </li>
+            
+            <li data-rid="4" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/307/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/307/" title="首发时间：23 年前 章节字数：5082">第四节</a>
+                
+            </li>
+            
+            <li data-rid="5" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/308/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/308/" title="首发时间：23 年前 章节字数：10065">第五节</a>
+                
+            </li>
+            
+            <li data-rid="6" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/309/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/309/" title="首发时间：4 年前 章节字数：14912">第六节</a>
+                
+            </li>
+            
+            <li data-rid="7" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/310/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/310/" title="首发时间：23 年前 章节字数：10467">第七节</a>
+                
+            </li>
+            
+            <li data-rid="8" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/311/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/311/" title="首发时间：23 年前 章节字数：11615">第八节</a>
+                
+            </li>
+            
+        </ul>
+
+        
+    </div>
+    
+    <div class="volume">
+        <div class="cover"></div>
+        
+        <h3 class="collapse_hidden">
+            第十六章<i>&#183;</i>共8章<span class="free"> 免费</span>
+        </h3>
+        <ul class="cf">
+            
+            <li data-rid="1" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/312/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/312/" title="首发时间：23 年前 章节字数：4699">第一节</a>
+                
+            </li>
+            
+            <li data-rid="2" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/313/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/313/" title="首发时间：23 年前 章节字数：17115">第二节</a>
+                
+            </li>
+            
+            <li data-rid="3" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/314/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/314/" title="首发时间：23 年前 章节字数：10343">第三节</a>
+                
+            </li>
+            
+            <li data-rid="4" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/315/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/315/" title="首发时间：23 年前 章节字数：6017">第四节</a>
+                
+            </li>
+            
+            <li data-rid="5" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/316/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/316/" title="首发时间：23 年前 章节字数：7865">第五节</a>
+                
+            </li>
+            
+            <li data-rid="6" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/317/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/317/" title="首发时间：9 年前 章节字数：7767">第六节</a>
+                
+            </li>
+            
+            <li data-rid="7" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/318/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/318/" title="首发时间：9 年前 章节字数：12063">第七节</a>
+                
+            </li>
+            
+            <li data-rid="8" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/319/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/319/" title="首发时间：23 年前 章节字数：6577">第八节</a>
+                
+            </li>
+            
+        </ul>
+
+        
+    </div>
+    
+    <div class="volume">
+        <div class="cover"></div>
+        
+        <h3 class="collapse_hidden">
+            第十七章<i>&#183;</i>共8章<span class="free"> 免费</span>
+        </h3>
+        <ul class="cf">
+            
+            <li data-rid="1" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/320/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/320/" title="首发时间：9 年前 章节字数：12755">第一节</a>
+                
+            </li>
+            
+            <li data-rid="2" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/321/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/321/" title="首发时间：9 年前 章节字数：18076">第二节</a>
+                
+            </li>
+            
+            <li data-rid="3" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/322/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/322/" title="首发时间：9 年前 章节字数：7554">第三节</a>
+                
+            </li>
+            
+            <li data-rid="4" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/323/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/323/" title="首发时间：23 年前 章节字数：10503">第四节</a>
+                
+            </li>
+            
+            <li data-rid="5" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/324/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/324/" title="首发时间：23 年前 章节字数：4932">第五节</a>
+                
+            </li>
+            
+            <li data-rid="6" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/325/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/325/" title="首发时间：23 年前 章节字数：4978">第六节</a>
+                
+            </li>
+            
+            <li data-rid="7" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/326/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/326/" title="首发时间：23 年前 章节字数：7828">第七节</a>
+                
+            </li>
+            
+            <li data-rid="8" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/327/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/327/" title="首发时间：23 年前 章节字数：7917">第八节</a>
+                
+            </li>
+            
+        </ul>
+
+        
+    </div>
+    
+    <div class="volume">
+        <div class="cover"></div>
+        
+        <h3 class="collapse_hidden">
+            第十二卷<i>&#183;</i>共8章<span class="free"> 免费</span>
+        </h3>
+        <ul class="cf">
+            
+            <li data-rid="1" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/218996/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/218996/" title="首发时间：22 年前 章节字数：13743">第一节</a>
+                
+            </li>
+            
+            <li data-rid="2" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/219555/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/219555/" title="首发时间：9 年前 章节字数：11103">第二节</a>
+                
+            </li>
+            
+            <li data-rid="3" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/220454/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/220454/" title="首发时间：9 年前 章节字数：9363">第三节</a>
+                
+            </li>
+            
+            <li data-rid="4" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/221158/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/221158/" title="首发时间：22 年前 章节字数：10030">第四节</a>
+                
+            </li>
+            
+            <li data-rid="5" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/221842/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/221842/" title="首发时间：4 年前 章节字数：14869">第五节</a>
+                
+            </li>
+            
+            <li data-rid="6" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/222590/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/222590/" title="首发时间：22 年前 章节字数：13899">第六节</a>
+                
+            </li>
+            
+            <li data-rid="7" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/223475/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/223475/" title="首发时间：22 年前 章节字数：18938">第七节</a>
+                
+            </li>
+            
+            <li data-rid="8" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/224262/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/224262/" title="首发时间：22 年前 章节字数：17322">第八节</a>
+                
+            </li>
+            
+        </ul>
+
+        
+    </div>
+    
+    <div class="volume">
+        <div class="cover"></div>
+        
+        <h3 class="collapse_hidden">
+            第十一卷<i>&#183;</i>共4章<span class="free"> 免费</span>
+        </h3>
+        <ul class="cf">
+            
+            <li data-rid="1" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/654751933/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/654751933/" title="首发时间：5 年前 章节字数：9069">第十一卷 第一章 （上）愚民暴民</a>
+                
+            </li>
+            
+            <li data-rid="2" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/654755591/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/654755591/" title="首发时间：5 年前 章节字数：17143">第十一卷 第一章（下）国策会议</a>
+                
+            </li>
+            
+            <li data-rid="3" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/219004/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/219004/" title="首发时间：9 年前 章节字数：35703">第二章 不义之降</a>
+                
+            </li>
+            
+            <li data-rid="4" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/219005/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/219005/" title="首发时间：22 年前 章节字数：9898">第三章 历史借镜</a>
+                
+            </li>
+            
+        </ul>
+
+        
+    </div>
+    
+    <div class="volume">
+        <div class="cover"></div>
+        
+        <h3 class="collapse_hidden">
+            第十三卷<i>&#183;</i>共8章<span class="free"> 免费</span>
+        </h3>
+        <ul class="cf">
+            
+            <li data-rid="1" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/224858/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/224858/" title="首发时间：22 年前 章节字数：4626">第一节</a>
+                
+            </li>
+            
+            <li data-rid="2" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/225616/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/225616/" title="首发时间：22 年前 章节字数：5055">第二节</a>
+                
+            </li>
+            
+            <li data-rid="3" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/226251/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/226251/" title="首发时间：22 年前 章节字数：4614">第三节</a>
+                
+            </li>
+            
+            <li data-rid="4" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/226971/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/226971/" title="首发时间：22 年前 章节字数：4636">第四节</a>
+                
+            </li>
+            
+            <li data-rid="5" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/227631/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/227631/" title="首发时间：22 年前 章节字数：4548">第五节</a>
+                
+            </li>
+            
+            <li data-rid="6" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/228298/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/228298/" title="首发时间：22 年前 章节字数：4787">第六节</a>
+                
+            </li>
+            
+            <li data-rid="7" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/228971/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/228971/" title="首发时间：22 年前 章节字数：5609">第七节</a>
+                
+            </li>
+            
+            <li data-rid="8" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/229749/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/229749/" title="首发时间：22 年前 章节字数：4621">第八节</a>
+                
+            </li>
+            
+        </ul>
+
+        
+    </div>
+    
+    <div class="volume">
+        <div class="cover"></div>
+        
+        <h3 class="collapse_hidden">
+            第十九卷<i>&#183;</i>共2章<span class="free"> 免费</span>
+        </h3>
+        <ul class="cf">
+            
+            <li data-rid="1" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/24987388/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/24987388/" title="首发时间：7 年前 章节字数：64">老猪新书上传欢迎大家捧场</a>
+                
+            </li>
+            
+            <li data-rid="2" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/82353428/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/82353428/" title="首发时间：11 年前 章节字数：205">老猪的新书上传 我家的大明郡主</a>
+                
+            </li>
+            
+        </ul>
+
+        
+    </div>
+    
+    <div class="volume">
+        <div class="cover"></div>
+        
+        <h3 class="collapse_hidden">
+            VIP卷<i>&#183;</i>共158章<span class="vip"> VIP</span>
+        </h3>
+        <ul class="cf">
+            
+            <li data-rid="1" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10001852/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10001852/" title="首发时间：7 年前 章节字数：17231">转瞬红颜（紫川系列第三部） 第一集 第1-2章（修正版，全）</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="2" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10001875/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10001875/" title="首发时间：7 年前 章节字数：2358">转瞬红颜（紫川系列第三部） 第一集 第三章（上）</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="3" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10001892/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10001892/" title="首发时间：9 年前 章节字数：1940">转瞬红颜（紫川系列第三部） 第一集 第三章（中）</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="4" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10001916/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10001916/" title="首发时间：9 年前 章节字数：2230">转瞬红颜（紫川系列第三部） 第一集 第三章（下）</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="5" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10002020/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10002020/" title="首发时间：9 年前 章节字数：2748">转瞬红颜（紫川系列第三部） 第一集 第四章（一）</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="6" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10002063/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10002063/" title="首发时间：9 年前 章节字数：4912">转瞬红颜（紫川系列第三部） 第一集 第四章（二）</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="7" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10002199/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10002199/" title="首发时间：9 年前 章节字数：5720">转瞬红颜（紫川系列第三部） 第一集 第五章（一）</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="8" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10002344/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10002344/" title="首发时间：9 年前 章节字数：4988">转瞬红颜（紫川系列第三部） 第一集 第五章（二）</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="9" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10002417/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10002417/" title="首发时间：7 年前 章节字数：5495">转瞬红颜（紫川系列第三部） 第一集 第六章</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="10" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10002556/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10002556/" title="首发时间：9 年前 章节字数：5290">第一集 第七章</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="11" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10002794/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10002794/" title="首发时间：7 年前 章节字数：4272">第一集 第八章</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="12" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10002900/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10002900/" title="首发时间：9 年前 章节字数：11433">第一集 第九章</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="13" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10003334/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10003334/" title="首发时间：9 年前 章节字数：9023">转瞬红颜（紫川系列第三部）第二集 第一章</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="14" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10003651/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10003651/" title="首发时间：9 年前 章节字数：8917">第二集 第二章</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="15" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10003855/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10003855/" title="首发时间：9 年前 章节字数：8969">第二集 第三章</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="16" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10004102/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10004102/" title="首发时间：9 年前 章节字数：9743">第二集 第四章</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="17" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10004513/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10004513/" title="首发时间：9 年前 章节字数：8394">第二集 第五章</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="18" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10004582/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10004582/" title="首发时间：4 年前 章节字数：8160">第二集 第六章</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="19" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10004583/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10004583/" title="首发时间：9 年前 章节字数：8541">第二集 第七章</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="20" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10004584/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10004584/" title="首发时间：9 年前 章节字数：8421">第二集 第八章</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="21" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10004918/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10004918/" title="首发时间：9 年前 章节字数：7289">第三集 第一章</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="22" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10005274/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10005274/" title="首发时间：7 年前 章节字数：7488">第三集 第二章</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="23" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10005506/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10005506/" title="首发时间：9 年前 章节字数：9154">第三集 第三章 哨卡兵变</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="24" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10005507/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10005507/" title="首发时间：9 年前 章节字数：11171">第四章 穷追猛打</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="25" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10005508/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10005508/" title="首发时间：9 年前 章节字数：9163">第五章 恶人恶报</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="26" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10005509/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10005509/" title="首发时间：9 年前 章节字数：8512">第六章 黑衣明王</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="27" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10005510/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10005510/" title="首发时间：9 年前 章节字数：7025">第七章 河丘之危</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="28" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10005511/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10005511/" title="首发时间：9 年前 章节字数：11757">第八章 天意弄人</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="29" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10008525/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10008525/" title="首发时间：9 年前 章节字数：4662">第十七集 第一章</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="30" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10008548/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10008548/" title="首发时间：9 年前 章节字数：5943">第十七集 第一章(下)</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="31" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10008777/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10008777/" title="首发时间：9 年前 章节字数：8348">第十七集 第二章</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="32" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10008778/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10008778/" title="首发时间：9 年前 章节字数：9920">第十七集 第三章</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="33" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10008779/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10008779/" title="首发时间：9 年前 章节字数：8775">第十七集 第四章</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="34" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10008780/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10008780/" title="首发时间：9 年前 章节字数：10218">第十七集 第五章</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="35" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10008781/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10008781/" title="首发时间：9 年前 章节字数：8060">第十七集 第六章</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="36" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10008782/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10008782/" title="首发时间：9 年前 章节字数：9655">第十七集 第七章</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="37" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10008783/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10008783/" title="首发时间：9 年前 章节字数：8005">第十七集 第八章</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="38" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10011584/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10011584/" title="首发时间：9 年前 章节字数：9596">第十八集卫国之战 第一章 人类危机</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="39" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10011676/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10011676/" title="首发时间：9 年前 章节字数：8662">第十八集卫国之战 第二章 相依相守</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="40" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10011952/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10011952/" title="首发时间：9 年前 章节字数：10611">第十八集卫国之战 第三章 征途轶事</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="41" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10012282/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10012282/" title="首发时间：9 年前 章节字数：10043">第十八集卫国之战 第四章 统领交接</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="42" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10012284/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10012284/" title="首发时间：9 年前 章节字数：9895">第十八集卫国之战 第五章 魔族狂潮</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="43" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10012285/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10012285/" title="首发时间：9 年前 章节字数：10740">第十八集卫国之战 第六章 败类兴风</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="44" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10012632/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10012632/" title="首发时间：9 年前 章节字数：10732">第十八集卫国之战 第七章 帝都告急</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="45" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10017376/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10017376/" title="首发时间：9 年前 章节字数：3176">第十九集 第一章 沦陷轶事(1)</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="46" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10017479/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10017479/" title="首发时间：9 年前 章节字数：2681">第十九集 第一章 沦陷轶事(2)</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="47" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10017585/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10017585/" title="首发时间：9 年前 章节字数：2196">第十九集 第一章 沦陷轶事(3)</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="48" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10017698/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10017698/" title="首发时间：9 年前 章节字数：3071">第十九集 第一章 沦陷轶事(4)</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="49" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10018150/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10018150/" title="首发时间：9 年前 章节字数：4740">第十九集 第二章 全民战备(1)</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="50" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10018286/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10018286/" title="首发时间：9 年前 章节字数：6513">第十九集 第二章 全民战备(2)</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="51" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10018621/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10018621/" title="首发时间：22 年前 章节字数：9007">第十九集 第三章 屈辱逆贼</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="52" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10018623/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10018623/" title="首发时间：22 年前 章节字数：9296">第十九集 第四章 贪妄魔族</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="53" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10018624/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10018624/" title="首发时间：22 年前 章节字数：13504">第十九集 第五章 帝都神话</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="54" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10018695/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10018695/" title="首发时间：22 年前 章节字数：9226">第十九集 第六章 败军之怀</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="55" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10018700/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10018700/" title="首发时间：22 年前 章节字数：11281">第十九集 第七章 生死相托</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="56" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10033460/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10033460/" title="首发时间：21 年前 章节字数：3676">第二十集神兵天降 第一章 西北蓝城(上)</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="57" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10033612/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10033612/" title="首发时间：21 年前 章节字数：4075">第二十集神兵天降 第一章 西北蓝城(中)</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="58" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10033773/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10033773/" title="首发时间：21 年前 章节字数：6411">第二十集神兵天降 第一章 西北蓝城(下)</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="59" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10034089/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10034089/" title="首发时间：21 年前 章节字数：5295">第二十集神兵天降 第二章 战地儿女(贺起点三周年庆)本章免费</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="60" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10034413/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10034413/" title="首发时间：21 年前 章节字数：10673">第二十集神兵天降 第三章 蒙族协议</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="61" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10034594/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10034594/" title="首发时间：21 年前 章节字数：5678">第二十集神兵天降 第四章 灵魂知己</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="62" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10034738/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10034738/" title="首发时间：21 年前 章节字数：7708">第二十集神兵天降 第五章 赤旗十字</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="63" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10034929/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10034929/" title="首发时间：21 年前 章节字数：8570">第二十集神兵天降 第六章 临时首府</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="64" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10035201/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10035201/" title="首发时间：9 年前 章节字数：10198">第二十集神兵天降 第七章 旦雅之危</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="65" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10035372/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10035372/" title="首发时间：21 年前 章节字数：3065">第二十集神兵天降 第八章 国之奇蕾(上)</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="66" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10035373/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10035373/" title="首发时间：21 年前 章节字数：3382">第二十集神兵天降 第八章 国之奇蕾(下)</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="67" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10061453/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10061453/" title="首发时间：21 年前 章节字数：4305">第二十一集帝都城头 第一章 (上)</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="68" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10061582/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10061582/" title="首发时间：21 年前 章节字数：5931">第二十一集帝都城头 第一章 (下)</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="69" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10061583/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10061583/" title="首发时间：21 年前 章节字数：8540">第二十一集帝都城头 第二章</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="70" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10061584/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10061584/" title="首发时间：21 年前 章节字数：10156">第二十一集帝都城头 第三章</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="71" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10061585/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10061585/" title="首发时间：21 年前 章节字数：9366">第二十一集帝都城头 第四章</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="72" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10061587/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10061587/" title="首发时间：21 年前 章节字数：9026">第二十一集帝都城头 第五章</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="73" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10061588/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10061588/" title="首发时间：21 年前 章节字数：8798">第二十一集帝都城头 第六章</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="74" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10061589/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10061589/" title="首发时间：21 年前 章节字数：9356">第二十一集帝都城头 第七章</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="75" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10061590/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10061590/" title="首发时间：21 年前 章节字数：10406">第二十一集帝都城头 第八章</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="76" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10096080/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10096080/" title="首发时间：20 年前 章节字数：9777">第二十二集生死辉煌 第一章 流星长叹</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="77" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10096081/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10096081/" title="首发时间：20 年前 章节字数：9668">第二十二集生死辉煌 第二章 骗天绑匪</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="78" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10096083/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10096083/" title="首发时间：9 年前 章节字数：13240">第二十二集生死辉煌 第三章 扬威两军</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="79" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10096084/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10096084/" title="首发时间：20 年前 章节字数：9099">第二十二集生死辉煌 第四章 决战序幕</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="80" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10096085/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10096085/" title="首发时间：20 年前 章节字数：10149">第二十二集生死辉煌 第五章 血肉狂飚</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="81" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10096086/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10096086/" title="首发时间：20 年前 章节字数：11251">第二十二集生死辉煌 第六章 东路信使</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="82" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10096087/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10096087/" title="首发时间：20 年前 章节字数：9939">第二十二集生死辉煌 第七章 生死鏖战</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="83" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10128682/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10128682/" title="首发时间：20 年前 章节字数：10066">第二十三集帝国的黄昏 第一章 魔皇神威</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="84" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10128683/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10128683/" title="首发时间：9 年前 章节字数：10909">第二十三集帝国的黄昏 第二章 喋血高地</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="85" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10128684/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10128684/" title="首发时间：20 年前 章节字数：10111">第二十三集帝国的黄昏 第三章 奇兵突起</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="86" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10128685/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10128685/" title="首发时间：20 年前 章节字数：15618">第二十三集帝国的黄昏 第四章 人类欢歌</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="87" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10128686/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10128686/" title="首发时间：20 年前 章节字数：12035">第二十三集帝国的黄昏 第五章 血日冉冉</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="88" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10128687/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10128687/" title="首发时间：20 年前 章节字数：10137">第二十三集帝国的黄昏 第六章 战后余情</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="89" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10162609/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10162609/" title="首发时间：20 年前 章节字数：5636">第二十四集 第一章 东征战争（上）</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="90" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10162610/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10162610/" title="首发时间：20 年前 章节字数：5542">第二十四集 第一章 东征战争（下）</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="91" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10174298/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10174298/" title="首发时间：20 年前 章节字数：11146">第二十四集 第二章 远征统帅</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="92" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10174300/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10174300/" title="首发时间：20 年前 章节字数：8398">第二十四集 第三章 傀儡皇帝</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="93" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10174301/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10174301/" title="首发时间：20 年前 章节字数：11745">第二十四集 第四章 道捷亚昆</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="94" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10174302/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10174302/" title="首发时间：20 年前 章节字数：6418">第二十四集 第五章 罗杰失踪</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="95" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10174303/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10174303/" title="首发时间：20 年前 章节字数：10008">第二十四集 第六章 神秘袭击</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="96" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10174304/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10174304/" title="首发时间：20 年前 章节字数：3732">第二十四集 第七章 野蛮人兽</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="97" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10209960/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10209960/" title="首发时间：19 年前 章节字数：10023">第二十五集 第一章</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="98" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10209961/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10209961/" title="首发时间：19 年前 章节字数：6055">第二十五集 第二章</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="99" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10209962/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10209962/" title="首发时间：19 年前 章节字数：6102">第二十五集 第三章</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="100" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10209963/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10209963/" title="首发时间：19 年前 章节字数：6291">第二十五集 第四章</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="101" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10209964/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10209964/" title="首发时间：19 年前 章节字数：9783">第二十五集 第五章</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="102" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10209965/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10209965/" title="首发时间：19 年前 章节字数：10535">第二十五集 第六章</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="103" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10209966/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10209966/" title="首发时间：19 年前 章节字数：6394">第二十五集 第七章</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="104" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10209967/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10209967/" title="首发时间：19 年前 章节字数：9338">第二十五集 第八章</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="105" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10237897/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10237897/" title="首发时间：7 年前 章节字数：8893">第二十六集 新魔神皇 第一章 情报第七司</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="106" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10237900/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10237900/" title="首发时间：19 年前 章节字数：8008">第二十六集 新魔神皇 第三章 束手无策</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="107" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10237901/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10237901/" title="首发时间：9 年前 章节字数：11922">第二十六集 新魔神皇 第四章 野蛮人</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="108" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10237902/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10237902/" title="首发时间：19 年前 章节字数：9845">第二十六集 新魔神皇 第五章 异变</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="109" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10237903/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10237903/" title="首发时间：19 年前 章节字数：10718">第二十六集 新魔神皇 第六章 撤退</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="110" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10237904/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10237904/" title="首发时间：19 年前 章节字数：8577">第二十六集 新魔神皇 第七章 光明皇</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="111" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10275523/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10275523/" title="首发时间：19 年前 章节字数：6409">第二十七集 第一章</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="112" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10275524/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10275524/" title="首发时间：19 年前 章节字数：6051">第二十七集 第二章</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="113" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10275525/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10275525/" title="首发时间：19 年前 章节字数：6153">第二十七集 第三章</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="114" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10275526/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10275526/" title="首发时间：19 年前 章节字数：6240">第二十七集 第四章</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="115" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10275527/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10275527/" title="首发时间：19 年前 章节字数：5183">第二十七集 第五章</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="116" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10275528/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10275528/" title="首发时间：19 年前 章节字数：6268">第二十七集 第六章</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="117" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10275529/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10275529/" title="首发时间：19 年前 章节字数：6056">第二十七集 第七章</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="118" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10275531/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10275531/" title="首发时间：19 年前 章节字数：5575">第二十七集 第八章</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="119" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10275532/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10275532/" title="首发时间：19 年前 章节字数：6549">第二十七集 第九章</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="120" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10275858/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10275858/" title="首发时间：19 年前 章节字数：9715">第二十七集 第十章</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="121" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10330809/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10330809/" title="首发时间：19 年前 章节字数：8015">第二十八集 第一章 悚人惊变</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="122" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10330810/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10330810/" title="首发时间：19 年前 章节字数：10753">第二十八集 第二章 唯有兵谏</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="123" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10330811/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10330811/" title="首发时间：19 年前 章节字数：8513">第二十八集 第三章 神秘七司</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="124" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10330814/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10330814/" title="首发时间：19 年前 章节字数：9974">第二十八集 第四章 帝林弑君</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="125" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10330815/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10330815/" title="首发时间：9 年前 章节字数：9141">第二十八集 第五章 巨星陨落</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="126" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10330817/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10330817/" title="首发时间：19 年前 章节字数：8108">第二十八集 第六章 缓兵之计</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="127" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10330818/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10330818/" title="首发时间：19 年前 章节字数：8146">第二十八集 第七章 生存之道</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="128" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/10330819/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/10330819/" title="首发时间：19 年前 章节字数：7898">第二十八集 第八章 家族大劫</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="129" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/20131874/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/20131874/" title="首发时间：18 年前 章节字数：9133">第二十九集 第一章</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="130" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/20131892/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/20131892/" title="首发时间：18 年前 章节字数：10031">第二十九集 第二章</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="131" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/20131904/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/20131904/" title="首发时间：18 年前 章节字数：10096">第二十九集 第三章</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="132" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/20131921/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/20131921/" title="首发时间：18 年前 章节字数：9082">第二十九集 第四章</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="133" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/20131937/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/20131937/" title="首发时间：18 年前 章节字数：9061">第二十九集 第五章</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="134" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/20131948/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/20131948/" title="首发时间：7 年前 章节字数：8184">第二十九集 第六章</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="135" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/20131963/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/20131963/" title="首发时间：18 年前 章节字数：8047">第二十九集 第七章</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="136" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/20131974/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/20131974/" title="首发时间：18 年前 章节字数：9709">第二十九集 第八章</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="137" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/21353605/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/21353605/" title="首发时间：18 年前 章节字数：7689">第三十集 决裂 第一章 瓦伦要塞</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="138" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/21361739/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/21361739/" title="首发时间：18 年前 章节字数：10129">第三十集 第二章 阁楼圭王</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="139" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/21369786/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/21369786/" title="首发时间：5 年前 章节字数：10590">第三十集 第三章 西南之战</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="140" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/21377686/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/21377686/" title="首发时间：18 年前 章节字数：9741">第三十集 第四章 停战协议</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="141" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/21386058/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/21386058/" title="首发时间：9 年前 章节字数：11832">第三十集 第五章 行省造反</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="142" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/21394762/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/21394762/" title="首发时间：18 年前 章节字数：10513">第三十集 第六章 久旱甘霖</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="143" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/21402997/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/21402997/" title="首发时间：18 年前 章节字数：11736">第三十集 第七章 远东出军</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="144" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/22693097/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/22693097/" title="首发时间：17 年前 章节字数：6873">第三十一集 双雄对决 第一章 限时公告</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="145" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/22693100/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/22693100/" title="首发时间：17 年前 章节字数：10037">第三十一集 双雄对决 第二章 乱世沧桑</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="146" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/22703075/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/22703075/" title="首发时间：17 年前 章节字数：7409">第三十一集 双雄对决 第三章 勒王讨逆</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="147" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/22703081/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/22703081/" title="首发时间：17 年前 章节字数：8322">第三十一集 双雄对决 第四章 战略局势</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="148" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/22712428/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/22712428/" title="首发时间：17 年前 章节字数：9830">第三十一集 双雄对决 第五章 防微杜渐</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="149" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/22712466/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/22712466/" title="首发时间：17 年前 章节字数：8129">第三十一集 双雄对决 第六章 乱世人心</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="150" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/22722934/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/22722934/" title="首发时间：7 年前 章节字数：6892">第三十一集 双雄对决 第七章 大战序幕</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="151" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/22722936/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/22722936/" title="首发时间：7 年前 章节字数：8074">第三十一集 双雄对决 第八章 雷霆万钧</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="152" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/22733234/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/22733234/" title="首发时间：17 年前 章节字数：8880">第三十二集 尘埃落定 第一章 生死之地</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="153" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/22733259/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/22733259/" title="首发时间：17 年前 章节字数：9502">第三十二集 尘埃落定 第二章 单打独斗</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="154" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/22742803/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/22742803/" title="首发时间：17 年前 章节字数：10253">第三十二集 尘埃落定 第三章 各安天命</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="155" class="collapse_hidden">
+                <a href="https://www.qidian.com/chapter/20/22742805/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/22742805/" title="首发时间：17 年前 章节字数：12610">第三十二集 尘埃落定 第四章 君臣相疑</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="156" class="">
+                <a href="https://www.qidian.com/chapter/20/22752894/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/22752894/" title="首发时间：17 年前 章节字数：10086">第三十二集 尘埃落定 第五章 重返帝都</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="157" class="">
+                <a href="https://www.qidian.com/chapter/20/22752895/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/22752895/" title="首发时间：17 年前 章节字数：12177">第三十二集 尘埃落定 第六章 帝国新生（上）</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+            <li data-rid="158" class="">
+                <a href="https://www.qidian.com/chapter/20/22752896/" target="_blank" rel="nofollow" data-eid="qd_G55" data-cid="https://www.qidian.com/chapter/20/22752896/" title="首发时间：17 年前 章节字数：10065">第三十二集 尘埃落定 第六章 帝国新生（下）全书完</a>
+                
+                    <em class="iconfont ">&#xe63c;</em>
+                
+            </li>
+            
+        </ul>
+
+        
+    </div>
+    
+</section>
+
+                
+            
+
+            <!-- 第一章内容 -->
+            
+            <section class="section chapter">
+                <h2 class="section-title">正文</h2>
+                <h1 class="chapter-title">
+                    第一节 胜利
+                </h1>
+
+                <div class="content js_collapse_wrap" data-collapse="600">
+                    
+                        
+                        <p>“是谁说魔族军队很强的？”罗杰副旗本得意的望着山脚下如同潮水般溃退的魔族精锐部队，“看起来似乎我还更强上一点。”</p><p>白川副旗本白了他一眼，没有搭理他。</p><p>长川副旗本悠悠说：“前天某人不是还说我们这次死定了，大家赶紧逃命去吧！”</p><p>“这种阵前动摇军心的人，我是最痛恨的！”罗杰义愤填膺，好象事情与他根本一点无关：“让我抓到他，非把他处决不可！”</p><p>“你患失忆症了！说你那，某人！”</p><p>“呵，我哪有说过这样的话啊？”他转向白川：“某人是在说你吧？”</p><p>白川冷眼看这对情敌在相互攻击，却掉转马头：“我去看看大人有没有指示。”</p><p>※※※</p><p>两万黑衣骑兵静静的列队在高冈上，却听不到一丝喧哗，只有远方隐隐传来魔族败军后撤的嘈杂声，还有的就是风掠过恒川平原低沉的呼鸣声“呜呜”，仿佛战死者的亡魂眷恋着不愿意离开他们最后的生存之地。</p><p>一个全身银色盔甲的武将高高立于山冈最顶峰。他身形高大威武，挺直的身躯露出全军统帅特有的威严，夕阳照在他一身银甲发出绚丽的光芒，在黑压压的骑兵阵中如同天神一般显眼——看那身招牌似的银甲就知道他是号称“紫川家族青年三大名将”中最年青也最传奇的紫川秀旗本了。</p><p>白川远远地看到这个令全远东军景仰的人物时，却无声的叹了口气。</p><p>她骑马奔近那个“紫川秀”，看看周围的警卫都是近身卫队成员，小声说：“古雷，你好大胆！敢穿大人的盔甲在这里冒充！”</p><p>“紫川秀”（近卫队长古雷）哭丧着脸：“白川长官，下官也不想的。只是大人非要让我装着这身劳什子立这里不能动…好沉啊，我累的不行了，已经压垮三匹战马了…”</p><p>“交战正激烈，大人去干什么了？”</p><p>古雷：“他刚刚在后山洗了澡，吃了顿烧烤，现在已经上chuang睡了。”</p><p>……</p><p>“那他有没有留下指示？”</p><p>古雷：“哦，有的，他说了，如果打输的话，赶紧过去叫醒他，一块逃命去。”</p><p>※※※</p><p>白川在后山树阴下找到紫川秀的帐篷，他裹在睡袋里睡的正香，发出阵阵有节奏的鼾声：“呼——噜，呼——噜！”</p><p>白川：“大人，快醒醒，快醒醒…”</p><p>睡袋里的人一动不动。</p><p>白川叹了口气：“大人，这可是你逼我的…”</p><p>转身出去拿了瓶开水回来，“我数一、二、三！”</p><p>“啊，不要倒，不要倒，我醒了。”</p><p>睡袋里转出个脑袋，眼睛迷糊着，睡意满脸——一个很俊俏的年青小伙子，或者说是少年——看他脸上稚气的笑意。</p><p>紫川秀：“什么要紧事啊？魔族杀过来了吗？”</p><p>白川：“…还没有。”</p><p>“那是士兵哗变了吗？”</p><p>白川：“那也是迟早的事情，等他们发现你用假人糊弄他们…”</p><p>紫川秀：“等他们吵起来再说吧——那些大兵也真是的，这点小事还那么斤斤计较。那么是罗杰和长川为你决斗，结果都死翘了，是吗？”</p><p>“很遗憾，大人，他们都还厚颜无耻地活者。事情是，我们打赢了，魔族军正在溃退。”</p><p>川秀一脸孔的惊奇：“啊，这就出乎我意料了。我们居然赢了？”他把头又缩回睡袋：“让我好好思考一阵。”</p><p>白川耐心的等啊等啊等啊等…。一直等到睡袋里又传出鼾声：“呼——噜，呼——噜。</p><p>于是她忍无可忍，将手里的开水……</p><p>“哇呀！”</p><p>帝国历778年，第三次恒川战役的胜利者，发出一阵绝对不会记载入史册的惨叫声…</p><p>******</p><p>以下非正文，也不会花钱买，猪卖点广告：</p><p>《紫川》、《佣兵天下》和《亵du》三本书合伙做了个XYZ游戏，第三次封测已经结束。马上开始不删档内测——2008年5月6日下午6：00。</p><p>需要注册的玩家，可以通过这个链接注册。</p><p></p><p>需要说明一点的是，这个游戏没有客户端，是一个网页游戏，大家进入游戏后，是成为一个贵族（三个国家自己选择），并拥有自己第一个小村子。</p><p>在游戏进行中，你通过修建农田、矿场等，可以源源不断获得资源，卖出资源就可以得到金币，可以提升科技，征兵，修建按更多的城市。</p><p>而其他两个邪恶的国家（亵du和佣兵天下啦@_@），他们的贵族会不停地派兵打你——当然，也有可能是你不停地打他们，呵呵......</p><p>游戏里还可以培养自己的英雄，建立公会，刷副本等等。</p><p>这个类型的游戏，最大的特点是，不怎么占用时间，上班的时候都可以抽空玩玩，就算不在线，游戏里依旧在生产资源。</p><p>感兴趣的朋友可以去玩玩，希望紫川帝国强大！</p><p>老猪..</p>
+                    
+                    <div class="js_open">阅读全文 <em class="iconfont down">&#xe623;</em>  </div>
+                </div>
+            </section>
+            
+
+
+            
+            <section class="section more-rec mt12 mb32">
+                <h2 class="section-title">更多推荐</h2>
+                <ul class="link-list mt12">
+                    
+                    
+                    <li class="link-item">
+                        <a href="/bookquery/hvnjamurclwz" class="link-name">
+                            年会不能停影评全文无删减无错字
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="link-item">
+                        <a href="/bookquery/tuzfenlwgtbp" class="link-name">
+                            极致病娇大小姐完整版txt电子书
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="link-item">
+                        <a href="/bookquery/minjhvdyoshv" class="link-name">
+                            8号记忆当铺同人
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="link-item">
+                        <a href="/bookquery/minjhvdylwmi" class="link-name">
+                            8号记忆当铺txt全本小说
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="link-item">
+                        <a href="/bookquery/minjhvdyhvnj" class="link-name">
+                            8号记忆当铺txt
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="link-item">
+                        <a href="/bookquery/hvnjsktuhvyc" class="link-name">
+                            林间有浅水完结书
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="link-item">
+                        <a href="/bookquery/amhvrhfokglw" class="link-name">
+                            第四天灾：无职转生免费阅读软件
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="link-item">
+                        <a href="/bookquery/clxanjjduren" class="link-name">
+                            多位映射之勇者讲的什么
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="link-item">
+                        <a href="/bookquery/amenkgrhkgxa" class="link-name">
+                            霍格沃茨的神奇生物训练家番外
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="link-item">
+                        <a href="/bookquery/amhvrhfoskur" class="link-name">
+                            第四天灾：无职转生全文阅读
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="link-item">
+                        <a href="/bookquery/amenkgrhkgjd" class="link-name">
+                            霍格沃茨的神奇生物训练家小说完结
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="link-item">
+                        <a href="/bookquery/amhvrhfoskos" class="link-name">
+                            第四天灾：无职转生小说无删减版在线全文阅读
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="link-item">
+                        <a href="/bookquery/amhvrhfonjlw" class="link-name">
+                            第四天灾：无职转生 完整版
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="link-item">
+                        <a href="/bookquery/amhvrhforhpe" class="link-name">
+                            第四天灾：无职转生小说无删减txt
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="link-item">
+                        <a href="/bookquery/amhvrhfoskxa" class="link-name">
+                            第四天灾：无职转生主线剧情梳理
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="link-item">
+                        <a href="/bookquery/amhvrhfonjcl" class="link-name">
+                            第四天灾：无职转生txt下载无乱码
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="link-item">
+                        <a href="/bookquery/amhvrhfoskkg" class="link-name">
+                            第四天灾：无职转生听书
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="link-item">
+                        <a href="/bookquery/amhvrhfoskfo" class="link-name">
+                            第四天灾：无职转生txt免费下载全本
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="link-item">
+                        <a href="/bookquery/amhvrhfoskiq" class="link-name">
+                            第四天灾：无职转生txt下载手机版
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="link-item">
+                        <a href="/bookquery/kgbpvxlwskur" class="link-name">
+                            死灵法师都市校园日常全文下载txt
+                        </a>
+                    </li>
+                    
+                </ul>
+            </section>
+            
+
+        </div>
+        <!-- end 书详情容器-->
+    </div>
+
+    <!-- start 页脚 -->
+    <!--
+ * @Author: tangtianlai@tal.com
+ * @Date: 2021-10-12 15:07:40
+ * @LastEditors: tangtianlai
+ * @LastEditTime: 2021-11-25 10:24:44
+ * @FilePath: /hongxiu_pc_proj/src/views/layout/footer.html
+-->
+<!-- start 页脚 -->
+<div class="footer">
+    
+    <!--start 友情链接-->
+    <div class="box-center cf">
+        <!--start 页脚菜单-->
+        <div class="footer-menu dib-wrap">
+            <a href="//www.yuewen.com" target="_blank" rel="nofollow">关于我们</a>
+            <a href="//www.yuewen.com/#&contact" target="_blank" rel="nofollow">联系我们</a>
+            
+                <a href="/help?id=11159" target="_blank" rel="nofollow">帮助中心</a>
+            
+            <a href="//www.yuewen.com/service.html" target="_blank" rel="nofollow">客服中心</a>
+            <a href="//join.yuewen.com" target="_blank" rel="nofollow">加入我们</a>
+            <a href="//write.qq.com/public/login.html?siteid=6" target="_blank" rel="nofollow">作家专区</a>
+            <a href="//jubao.yuewen.com" target="_blank" rel="nofollow">举报中心</a>
+            <a href="//security.tencent.com/" target="_blank" rel="nofollow">漏洞提交</a>
+            
+             <a href="/ask" title="在线问答">在线问答</a>
+            
+            
+             <a href="/novelbaike" title="小说百科">小说百科</a>
+            
+        </div>
+        <!--end 页脚菜单-->
+        <!--start 版权-->
+        
+
+
+
+
+
+
+
+<div class="copy-right">
+    <p><span>Copyright &copy; 1999-2026 www.hongxiu.com All Rights Reserved</span>版权所有 北京红袖添香科技发展有限公司</p>
+    <p><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502030109" style="display: inline-block;" target="_blank" rel="nofollow"><img src="//yuxseocdn.yuewen.com/pro/hongxiu_pc/_prelease/images/beian.d0289.png" style="float: left;">京公网安备 11010502030109号</a> <a href="https://imgservices-1252317822.image.myqcloud.com/coco/b12102024/2a23647f.9y9f9r.png">增值电信业务经营许可证：京ICP证090200号</a><a href="http://beian.miit.gov.cn/publish/query/indexFirst.action" target="_blank" rel="nofollow">互联网ICP备案号：京ICP备09093681号-1</a> 出版物经营许可证：新出发京零字第 朝180153 号
+    </p>
+    <p><a href="https://imgservices-1252317822.image.myqcloud.com/coco/b12102024/4cc0ace8.m670gd.png">网络文化经营许可证：京网文〔2024〕1504-075号</a> <a href="https://imgservices-1252317822.image.myqcloud.com/coco/b03042026/869ddf6d.gjxt8r.png" target="_blank">网络出版服务许可证：（署）网出证（京）字第140号</a><a target="_blank" href="https://imgservices-1252317822.image.myqcloud.com/coco/b12102024/6c3a33ff.6fp0yh.png"><span>营业执照</span></a>
+    </p>
+    <p>请所有作者发布作品时务必遵守国家互联网信息管理办法规定，我们拒绝任何色情小说，一经发现，即作删除！举报电话：010-59357051 举报邮箱：<a href="mailto:ywjubao@yuewen.com">ywjubao@yuewen.com</a></p>
+    <p>本站所收录的作品、社区话题、用户评论、用户上传内容或图片等均属用户个人行为。如前述内容侵害您的权益，欢迎举报投诉，一经核实，立即删除，本站不承担任何责任</p>
+    <p>联系方式 总机 010-83050798-6000 地址：北京市朝阳区东三环北路27号楼23层(20)2302内05单元</p>
+</div>
+
+
+
+
+
+
+        <!--end 版权-->
+
+        <!--start 安全中心-->
+        
+        <div class="safety-box">
+            <div class="safety-img dib-wrap">
+                <a class="site4" href="http://cyberpolice.mps.gov.cn/wfjb/" target="_blank" rel="nofollow"></a>
+                
+                    <a class="site3" href="https://ss.knet.cn/verifyseal.dll?sn=e17103011010869321wsdl000000&a=1&pa=0.8369620393163408" target="_blank" rel="nofollow"></a>
+                
+                <a class="site1" href="https://www.12377.cn" target="_blank" rel="nofollow"></a>
+                <a class="site2" href="http://www.bjjubao.org.cn/index.html" target="_blank" rel="nofollow"></a>
+            </div>
+        </div>
+        
+
+        
+
+        
+        <!--end 安全中心-->        
+    </div>
+</div>
+<!-- end 页脚 -->
+
+    <!-- end 页脚 -->
+</div>
+
+<!-- start LBF lib -->
+<script data-ignore="true" src="//yuxseocdn.yuewen.com/lbf/1.0.4.1/LBF.js?max_age=31536000"></script>
+<script>
+    LBF.config({"paths":{"site":"//yuxseocdn.yuewen.com/pro/hongxiu_pc/_prelease/js","static":"//yuxseocdn.yuewen.com/pro/hongxiu_pc/_prelease","common":"//qidian.gtimg.com/common/1.0.1"},"vars":{"theme":"//qidian.gtimg.com/hongxiu/css"},"combo":false,"debug":false});
+    LBF.use(['lib.jQuery', 'static/js/bookquery/index.90a14.js'], function ($, Index) {
+        // 页面逻辑入口
+        new Index({});
+    });
+</script>
+<!-- 页面置灰 -->
+<!-- <script>
+  var time = +new Date()
+  if (time < 1672502400000) { // - 2023-1-1
+    document.getElementsByTagName('html')[0].style.filter = 'grayscale(100%)'
+    document.getElementsByTagName('html')[0].style['-webkit-filter'] = 'grayscale(100%)'
+  }
+</script> -->
+
+<!--【新增】百度统计配置 -->
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?3ba92f5fe7e3e5ecd3c37df261beed8a";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+
+</body>
+</html>

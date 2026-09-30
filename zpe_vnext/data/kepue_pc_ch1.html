@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<link href="/favicon.ico" type="image/x-icon" rel="shortcut icon"  />
+	<title>页面不存在</title>
+	<!--设置5秒返回 -->
+	<style type="text/css">
+	a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,i,iframe,img,input,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,select,small,span,strike,strong,sub,summary,sup,table,tbody,td,textarea,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;}
+	a{outline:0;text-decoration:none;blr:expression(this.onFocus=this.blur());}
+	a:link{color:#000;}
+	a:visited{color:#000;}
+	a:active,a:focus,a:hover{color:#f35d34;}
+	img{border:none;}
+	body{background:#fff;}
+	.flex{display:box;display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;align-items:center;}
+	.error404{margin:0 auto;width:100%;text-align:center;font-size:12px;font-family:Arial,Microsoft YaHei,SimSun;height:100vh;}
+	.error404 .info{float:left;clear:both;padding-right:1%;padding-left:1%;width:98%;margin-top:-50px;}
+	.error404 .info h1{margin-top:0px;margin-bottom:10px;color:#f35d34;text-transform:uppercase;font-weight:700;font-size:98px;line-height:70px;}
+	.error404 .info .menu{margin:15px auto;color:#000;text-transform:uppercase;font-weight:300;font-size:16px;line-height:24px;max-width:420px}
+	.error404 .info .menu ul {flex-wrap:wrap;justify-content: center;}
+	.error404 .info .menu ul li {width:25%;}
+	.error404 .info .menu ul li a{display:block;text-align:center;white-space:nowrap;}
+	.error404 .info .btn{display:inline-block;margin:15px 5px 5px 0;padding:10px 41px;border:0 solid;border-color:#ef6d00;border-radius:5px;background:0 0;background-color:#ff8000;color:#fff;text-decoration:none;text-transform:uppercase;font-weight:600;font-size:16px;cursor:pointer;-webkit-transition:all .5s ease-in-out;-moz-transition:all .5s ease-in-out;-o-transition:all .5s ease-in-out;transition:all .5s ease-in-out;-ms-transition:all .5s ease-in-out;}
+	.error404 .info .btn-brown{border-color:#7b7b7b;background-color:#9f9f9f;}
+	.error404 .info h2{margin-top:20px;margin-bottom:20px;text-transform:uppercase;font-weight:700;font-size:23px;line-height:33px;}
+	.menu ul,.menu ul li {outline:none;list-style:none;}
+	#setTime{color:#f00;font-weight:bold;margin-right:5px;font-family:Arial;font-size:18px;}
+	@media (max-width:768px){
+	    .error404 .info{margin-top:0px;}
+	    .error404 .info h1{font-size:75px}
+	    .error404 .info h2{font-size:20px;}
+	    .error404 .info .btn{padding:8px 20px;font-size:14px;}
+	}
+	</style>
+</head>
+<body>
+	<div class="error404 flex">
+		<div class="info">
+			<h1>404</h1>
+			<h2>抱歉，您访问的页面不存在或已被删除！<br/> (｡•ˇ‸ˇ•｡)</h2>
+			<p class="p1"><span id="setTime">15</span>秒钟后将带您返回首页</p>
+			<div class="menu">
+			    <ul class="flex">
+			    </ul>
+			</div>			
+			<a href="/" class="btn">返回首页</a>
+			<a href="javascript:history.go(-1);" class="btn btn-brown">返回上一页</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		function countDown(){	
+			var time = document.getElementById("setTime");
+			if(time.innerHTML == 1){
+				time.innerHTML = time.innerHTML-1;
+				window.location.href="/";
+			}else{
+				time.innerHTML = time.innerHTML-1;
+			}
+		}
+		window.setInterval("countDown()",1000);
+	</script>
+</body>
+</html>

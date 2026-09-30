@@ -1,0 +1,8 @@
+# Cookie池配置文件
+# 每行一个Cookie，支持JSON格式或纯Cookie字符串
+# 格式1 (JSON): {"z_c0":"xxx", "_xsrf":"xxx", "d_c0":"xxx"}
+# 格式2 (字符串): z_c0=xxx; _xsrf=xxx; d_c0=xxx
+#
+# 示例（请替换为你自己的Cookie）:
+# {"z_c0":"MIISKqQY...YOUR_COOKIE_HERE...", "_xsrf":"abc123", "d_c0":"ABCDEF..."}
+# z_c0=MIISKqQY...; _xsrf=abc123; d_c0=ABCDEF...

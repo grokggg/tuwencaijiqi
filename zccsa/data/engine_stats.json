@@ -1,0 +1,1038 @@
+{
+  "saved_at": 1785787226.0403886,
+  "window_hours": 24,
+  "engines": {
+    "token_harvester": {
+      "name": "token_harvester",
+      "success": 14,
+      "failure": 1,
+      "bypass": 12,
+      "total_duration_ms": 0.0,
+      "total_requests": 0,
+      "last_run": 1785787225.967769,
+      "last_success": 1785787225.967769,
+      "history": [
+        {
+          "ts": 1785785192.6921566,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 0,
+          "score": 0,
+          "error": ""
+        },
+        {
+          "ts": 1785785670.5593107,
+          "success": true,
+          "bypass": false,
+          "duration_ms": 0,
+          "score": 0,
+          "error": ""
+        },
+        {
+          "ts": 1785785866.3440545,
+          "success": true,
+          "bypass": false,
+          "duration_ms": 0,
+          "score": 0,
+          "error": ""
+        },
+        {
+          "ts": 1785786859.9157202,
+          "success": true,
+          "bypass": true,
+          "duration_ms": 0,
+          "score": 0,
+          "error": ""
+        },
+        {
+          "ts": 1785786873.8844512,
+          "success": true,
+          "bypass": true,
+          "duration_ms": 0,
+          "score": 0,
+          "error": ""
+        },
+        {
+          "ts": 1785786886.961489,
+          "success": true,
+          "bypass": true,
+          "duration_ms": 0,
+          "score": 0,
+          "error": ""
+        },
+        {
+          "ts": 1785786981.7486098,
+          "success": true,
+          "bypass": true,
+          "duration_ms": 0,
+          "score": 0,
+          "error": ""
+        },
+        {
+          "ts": 1785786996.7499433,
+          "success": true,
+          "bypass": true,
+          "duration_ms": 0,
+          "score": 0,
+          "error": ""
+        },
+        {
+          "ts": 1785787010.3659232,
+          "success": true,
+          "bypass": true,
+          "duration_ms": 0,
+          "score": 0,
+          "error": ""
+        },
+        {
+          "ts": 1785787147.9390588,
+          "success": true,
+          "bypass": true,
+          "duration_ms": 0,
+          "score": 0,
+          "error": ""
+        },
+        {
+          "ts": 1785787155.0540662,
+          "success": true,
+          "bypass": true,
+          "duration_ms": 0,
+          "score": 0,
+          "error": ""
+        },
+        {
+          "ts": 1785787161.2489426,
+          "success": true,
+          "bypass": true,
+          "duration_ms": 0,
+          "score": 0,
+          "error": ""
+        },
+        {
+          "ts": 1785787213.4436073,
+          "success": true,
+          "bypass": true,
+          "duration_ms": 0,
+          "score": 0,
+          "error": ""
+        },
+        {
+          "ts": 1785787219.7167222,
+          "success": true,
+          "bypass": true,
+          "duration_ms": 0,
+          "score": 0,
+          "error": ""
+        },
+        {
+          "ts": 1785787225.967769,
+          "success": true,
+          "bypass": true,
+          "duration_ms": 0,
+          "score": 0,
+          "error": ""
+        }
+      ],
+      "current_weight": 150,
+      "total_score_sum": 0,
+      "best_score": 0,
+      "last_score": 0,
+      "avg_score": 0.0,
+      "consecutive_failures": 0,
+      "consecutive_successes": 3,
+      "tried_in_session": true
+    },
+    "third_party_token_engine": {
+      "name": "third_party_token_engine",
+      "success": 6,
+      "failure": 10,
+      "bypass": 6,
+      "total_duration_ms": 16749.671936035156,
+      "total_requests": 213,
+      "last_run": 1785787226.0403779,
+      "last_success": 1785787226.0403779,
+      "history": [
+        {
+          "ts": 1785784825.2763708,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 857.6321601867676,
+          "score": 0,
+          "error": ""
+        },
+        {
+          "ts": 1785785194.1388488,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 778.0706882476807,
+          "score": 0,
+          "error": ""
+        },
+        {
+          "ts": 1785785671.9970636,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 856.914758682251,
+          "score": 0,
+          "error": ""
+        },
+        {
+          "ts": 1785785874.2706594,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 1052.1578788757324,
+          "score": 0,
+          "error": ""
+        },
+        {
+          "ts": 1785786867.0919535,
+          "success": true,
+          "bypass": true,
+          "duration_ms": 222.43595123291016,
+          "score": 90,
+          "error": ""
+        },
+        {
+          "ts": 1785786881.1345,
+          "success": true,
+          "bypass": true,
+          "duration_ms": 307.45697021484375,
+          "score": 92,
+          "error": ""
+        },
+        {
+          "ts": 1785786897.8994174,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 4078.1450271606445,
+          "score": 0,
+          "error": ""
+        },
+        {
+          "ts": 1785786992.8169024,
+          "success": true,
+          "bypass": true,
+          "duration_ms": 4129.566669464111,
+          "score": 90,
+          "error": ""
+        },
+        {
+          "ts": 1785787003.8328779,
+          "success": true,
+          "bypass": true,
+          "duration_ms": 241.80960655212402,
+          "score": 92,
+          "error": ""
+        },
+        {
+          "ts": 1785787014.4093814,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 4040.7063961029053,
+          "score": 0,
+          "error": ""
+        },
+        {
+          "ts": 1785787147.9909406,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 33.24246406555176,
+          "score": 36,
+          "error": ""
+        },
+        {
+          "ts": 1785787155.1289487,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 31.238079071044922,
+          "score": 40,
+          "error": ""
+        },
+        {
+          "ts": 1785787161.3264637,
+          "success": true,
+          "bypass": true,
+          "duration_ms": 28.87868881225586,
+          "score": 98,
+          "error": ""
+        },
+        {
+          "ts": 1785787213.5227451,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 44.35300827026367,
+          "score": 36,
+          "error": ""
+        },
+        {
+          "ts": 1785787219.7753265,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 27.254104614257812,
+          "score": 40,
+          "error": ""
+        },
+        {
+          "ts": 1785787226.0403779,
+          "success": true,
+          "bypass": true,
+          "duration_ms": 19.809484481811523,
+          "score": 98,
+          "error": ""
+        }
+      ],
+      "current_weight": 150,
+      "total_score_sum": 174,
+      "best_score": 98,
+      "last_score": 98,
+      "avg_score": 10.875,
+      "consecutive_failures": 0,
+      "consecutive_successes": 1,
+      "tried_in_session": true
+    },
+    "search_engine_crawler_engine": {
+      "name": "search_engine_crawler_engine",
+      "success": 0,
+      "failure": 8,
+      "bypass": 0,
+      "total_duration_ms": 2841.8796062469482,
+      "total_requests": 166,
+      "last_run": 1785787213.6405902,
+      "last_success": 0.0,
+      "history": [
+        {
+          "ts": 1785784826.0027173,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 725.1091003417969,
+          "score": 0,
+          "error": ""
+        },
+        {
+          "ts": 1785785199.261172,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 353.4092903137207,
+          "score": 0,
+          "error": ""
+        },
+        {
+          "ts": 1785785672.5918145,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 592.9927825927734,
+          "score": 0,
+          "error": ""
+        },
+        {
+          "ts": 1785785874.8755069,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 601.6342639923096,
+          "score": 0,
+          "error": ""
+        },
+        {
+          "ts": 1785786898.1415722,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 239.7620677947998,
+          "score": 0,
+          "error": ""
+        },
+        {
+          "ts": 1785787021.5768125,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 286.49020195007324,
+          "score": 0,
+          "error": ""
+        },
+        {
+          "ts": 1785787148.063865,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 20.238637924194336,
+          "score": 0,
+          "error": "模拟: 未找到绕过"
+        },
+        {
+          "ts": 1785787213.6405902,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 22.243261337280273,
+          "score": 0,
+          "error": "模拟: 未找到绕过"
+        }
+      ],
+      "current_weight": 34.4373768,
+      "total_score_sum": 0,
+      "best_score": 0,
+      "last_score": 0,
+      "avg_score": 0.0,
+      "consecutive_failures": 1,
+      "consecutive_successes": 0,
+      "tried_in_session": false
+    },
+    "render_bypass_engine": {
+      "name": "render_bypass_engine",
+      "success": 18,
+      "failure": 3,
+      "bypass": 7,
+      "total_duration_ms": 55300.143241882324,
+      "total_requests": 62,
+      "last_run": 1785787226.015731,
+      "last_success": 1785787226.015731,
+      "history": [
+        {
+          "ts": 1785784824.417595,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 625.1349449157715,
+          "score": 0,
+          "error": ""
+        },
+        {
+          "ts": 1785785193.3591278,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 665.675163269043,
+          "score": 0,
+          "error": ""
+        },
+        {
+          "ts": 1785785671.1370008,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 575.9549140930176,
+          "score": 0,
+          "error": ""
+        },
+        {
+          "ts": 1785785873.2162092,
+          "success": true,
+          "bypass": false,
+          "duration_ms": 6866.536378860474,
+          "score": 46,
+          "error": ""
+        },
+        {
+          "ts": 1785786502.611001,
+          "success": true,
+          "bypass": true,
+          "duration_ms": 1000,
+          "score": 95,
+          "error": ""
+        },
+        {
+          "ts": 1785786859.8737967,
+          "success": true,
+          "bypass": true,
+          "duration_ms": 1000,
+          "score": 95,
+          "error": ""
+        },
+        {
+          "ts": 1785786866.8660977,
+          "success": true,
+          "bypass": false,
+          "duration_ms": 6946.950912475586,
+          "score": 44,
+          "error": ""
+        },
+        {
+          "ts": 1785786880.8232372,
+          "success": true,
+          "bypass": false,
+          "duration_ms": 6936.343669891357,
+          "score": 46,
+          "error": ""
+        },
+        {
+          "ts": 1785786893.8188689,
+          "success": true,
+          "bypass": false,
+          "duration_ms": 6854.9041748046875,
+          "score": 46,
+          "error": ""
+        },
+        {
+          "ts": 1785786981.7407196,
+          "success": true,
+          "bypass": true,
+          "duration_ms": 1000,
+          "score": 95,
+          "error": ""
+        },
+        {
+          "ts": 1785786988.6836805,
+          "success": true,
+          "bypass": false,
+          "duration_ms": 6931.491851806641,
+          "score": 46,
+          "error": ""
+        },
+        {
+          "ts": 1785787003.5873346,
+          "success": true,
+          "bypass": false,
+          "duration_ms": 6834.655284881592,
+          "score": 46,
+          "error": ""
+        },
+        {
+          "ts": 1785787021.2873914,
+          "success": true,
+          "bypass": false,
+          "duration_ms": 6875.083684921265,
+          "score": 46,
+          "error": ""
+        },
+        {
+          "ts": 1785787147.9310966,
+          "success": true,
+          "bypass": true,
+          "duration_ms": 1000,
+          "score": 95,
+          "error": ""
+        },
+        {
+          "ts": 1785787147.954947,
+          "success": true,
+          "bypass": true,
+          "duration_ms": 12.564659118652344,
+          "score": 87,
+          "error": ""
+        },
+        {
+          "ts": 1785787155.0946076,
+          "success": true,
+          "bypass": false,
+          "duration_ms": 37.32633590698242,
+          "score": 40,
+          "error": ""
+        },
+        {
+          "ts": 1785787161.2933786,
+          "success": true,
+          "bypass": false,
+          "duration_ms": 41.28551483154297,
+          "score": 35,
+          "error": ""
+        },
+        {
+          "ts": 1785787213.434591,
+          "success": true,
+          "bypass": true,
+          "duration_ms": 1000,
+          "score": 95,
+          "error": ""
+        },
+        {
+          "ts": 1785787213.4750843,
+          "success": true,
+          "bypass": true,
+          "duration_ms": 27.63652801513672,
+          "score": 87,
+          "error": ""
+        },
+        {
+          "ts": 1785787219.7445536,
+          "success": true,
+          "bypass": false,
+          "duration_ms": 24.300336837768555,
+          "score": 40,
+          "error": ""
+        },
+        {
+          "ts": 1785787226.015731,
+          "success": true,
+          "bypass": false,
+          "duration_ms": 44.29888725280762,
+          "score": 35,
+          "error": ""
+        }
+      ],
+      "current_weight": 150,
+      "total_score_sum": 257,
+      "best_score": 95,
+      "last_score": 35,
+      "avg_score": 12.238095238095237,
+      "consecutive_failures": 0,
+      "consecutive_successes": 4,
+      "tried_in_session": true
+    },
+    "cdn_cache_engine": {
+      "name": "cdn_cache_engine",
+      "success": 0,
+      "failure": 12,
+      "bypass": 0,
+      "total_duration_ms": 427.0913600921631,
+      "total_requests": 18,
+      "last_run": 1785787213.7877634,
+      "last_success": 0.0,
+      "history": [
+        {
+          "ts": 1785784826.0856178,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 81.72273635864258,
+          "score": 0,
+          "error": "无法获取基线响应"
+        },
+        {
+          "ts": 1785785199.378625,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 115.91172218322754,
+          "score": 0,
+          "error": "无法获取基线响应"
+        },
+        {
+          "ts": 1785785672.6665027,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 72.98684120178223,
+          "score": 0,
+          "error": "无法获取基线响应"
+        },
+        {
+          "ts": 1785785874.942184,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 64.79454040527344,
+          "score": 0,
+          "error": "无法获取基线响应"
+        },
+        {
+          "ts": 1785786502.6128368,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 0.0,
+          "score": 0,
+          "error": ""
+        },
+        {
+          "ts": 1785786502.6145713,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 0.0,
+          "score": 0,
+          "error": ""
+        },
+        {
+          "ts": 1785786859.8756816,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 0.0,
+          "score": 0,
+          "error": ""
+        },
+        {
+          "ts": 1785786981.7433827,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 0.0,
+          "score": 0,
+          "error": ""
+        },
+        {
+          "ts": 1785787147.9337115,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 0.0,
+          "score": 0,
+          "error": ""
+        },
+        {
+          "ts": 1785787148.2067237,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 41.342973709106445,
+          "score": 36,
+          "error": ""
+        },
+        {
+          "ts": 1785787213.4376264,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 0.0,
+          "score": 0,
+          "error": ""
+        },
+        {
+          "ts": 1785787213.7877634,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 50.33254623413086,
+          "score": 36,
+          "error": ""
+        }
+      ],
+      "current_weight": 22.59436291848,
+      "total_score_sum": 36,
+      "best_score": 36,
+      "last_score": 36,
+      "avg_score": 3.0,
+      "consecutive_failures": 2,
+      "consecutive_successes": 0,
+      "tried_in_session": false
+    },
+    "open_api_enum_engine": {
+      "name": "open_api_enum_engine",
+      "success": 0,
+      "failure": 8,
+      "bypass": 0,
+      "total_duration_ms": 10402.070760726929,
+      "total_requests": 638,
+      "last_run": 1785787213.6803808,
+      "last_success": 0.0,
+      "history": [
+        {
+          "ts": 1785784828.1525118,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 2065.635919570923,
+          "score": 0,
+          "error": ""
+        },
+        {
+          "ts": 1785785201.3710947,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 1990.9470081329346,
+          "score": 0,
+          "error": ""
+        },
+        {
+          "ts": 1785785674.7766902,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 2108.440399169922,
+          "score": 0,
+          "error": ""
+        },
+        {
+          "ts": 1785785876.968261,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 2024.064302444458,
+          "score": 0,
+          "error": ""
+        },
+        {
+          "ts": 1785786899.214935,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 1070.793628692627,
+          "score": 0,
+          "error": ""
+        },
+        {
+          "ts": 1785787022.6773398,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 1097.632646560669,
+          "score": 0,
+          "error": ""
+        },
+        {
+          "ts": 1785787148.1381726,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 25.310993194580078,
+          "score": 0,
+          "error": "模拟: 未找到绕过"
+        },
+        {
+          "ts": 1785787213.6803808,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 19.24586296081543,
+          "score": 0,
+          "error": "模拟: 未找到绕过"
+        }
+      ],
+      "current_weight": 32.28504075000001,
+      "total_score_sum": 0,
+      "best_score": 0,
+      "last_score": 0,
+      "avg_score": 0.0,
+      "consecutive_failures": 1,
+      "consecutive_successes": 0,
+      "tried_in_session": false
+    },
+    "render_diff_engine": {
+      "name": "render_diff_engine",
+      "success": 0,
+      "failure": 7,
+      "bypass": 0,
+      "total_duration_ms": 68.74608993530273,
+      "total_requests": 13,
+      "last_run": 1785787213.657978,
+      "last_success": 0.0,
+      "history": [
+        {
+          "ts": 1785784828.1557817,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 2.0487308502197266,
+          "score": 0,
+          "error": ""
+        },
+        {
+          "ts": 1785785202.8884485,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 2.2630691528320312,
+          "score": 0,
+          "error": ""
+        },
+        {
+          "ts": 1785785674.780703,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 2.202749252319336,
+          "score": 0,
+          "error": ""
+        },
+        {
+          "ts": 1785785876.9724195,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 2.2232532501220703,
+          "score": 0,
+          "error": ""
+        },
+        {
+          "ts": 1785786899.2201664,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 2.4766921997070312,
+          "score": 0,
+          "error": ""
+        },
+        {
+          "ts": 1785787148.1099453,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 43.309688568115234,
+          "score": 0,
+          "error": "模拟: 未找到绕过"
+        },
+        {
+          "ts": 1785787213.657978,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 14.221906661987305,
+          "score": 0,
+          "error": "模拟: 未找到绕过"
+        }
+      ],
+      "current_weight": 33.480783,
+      "total_score_sum": 0,
+      "best_score": 0,
+      "last_score": 0,
+      "avg_score": 0.0,
+      "consecutive_failures": 1,
+      "consecutive_successes": 0,
+      "tried_in_session": false
+    },
+    "api_endpoint_scanner": {
+      "name": "api_endpoint_scanner",
+      "success": 2,
+      "failure": 5,
+      "bypass": 2,
+      "total_duration_ms": 14126.43027305603,
+      "total_requests": 167,
+      "last_run": 1785787219.8022327,
+      "last_success": 1785787219.8022327,
+      "history": [
+        {
+          "ts": 1785785198.9032228,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 4762.939929962158,
+          "score": 0,
+          "error": ""
+        },
+        {
+          "ts": 1785785679.4525564,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 4670.212030410767,
+          "score": 0,
+          "error": ""
+        },
+        {
+          "ts": 1785785881.5524592,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 4578.294277191162,
+          "score": 0,
+          "error": ""
+        },
+        {
+          "ts": 1785787148.0059419,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 12.255668640136719,
+          "score": 36,
+          "error": ""
+        },
+        {
+          "ts": 1785787155.1644888,
+          "success": true,
+          "bypass": true,
+          "duration_ms": 31.731605529785156,
+          "score": 92,
+          "error": ""
+        },
+        {
+          "ts": 1785787213.5746126,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 48.29216003417969,
+          "score": 36,
+          "error": ""
+        },
+        {
+          "ts": 1785787219.8022327,
+          "success": true,
+          "bypass": true,
+          "duration_ms": 22.704601287841797,
+          "score": 92,
+          "error": ""
+        }
+      ],
+      "current_weight": 74.69594573760003,
+      "total_score_sum": 128,
+      "best_score": 92,
+      "last_score": 92,
+      "avg_score": 18.285714285714285,
+      "consecutive_failures": 0,
+      "consecutive_successes": 1,
+      "tried_in_session": false
+    },
+    "partner_token_engine": {
+      "name": "partner_token_engine",
+      "success": 0,
+      "failure": 5,
+      "bypass": 0,
+      "total_duration_ms": 4608.872652053833,
+      "total_requests": 17,
+      "last_run": 1785787213.7338831,
+      "last_success": 0.0,
+      "history": [
+        {
+          "ts": 1785785202.884566,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 1511.8157863616943,
+          "score": 0,
+          "error": ""
+        },
+        {
+          "ts": 1785785680.9709814,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 1512.2325420379639,
+          "score": 0,
+          "error": ""
+        },
+        {
+          "ts": 1785785883.0711882,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 1513.279676437378,
+          "score": 0,
+          "error": ""
+        },
+        {
+          "ts": 1785787148.1623542,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 21.2862491607666,
+          "score": 0,
+          "error": "模拟: 未找到绕过"
+        },
+        {
+          "ts": 1785787213.7338831,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 50.25839805603027,
+          "score": 0,
+          "error": "模拟: 未找到绕过"
+        }
+      ],
+      "current_weight": 29.524500000000007,
+      "total_score_sum": 0,
+      "best_score": 0,
+      "last_score": 0,
+      "avg_score": 0.0,
+      "consecutive_failures": 1,
+      "consecutive_successes": 0,
+      "tried_in_session": false
+    },
+    "snapshot_engine": {
+      "name": "snapshot_engine",
+      "success": 0,
+      "failure": 5,
+      "bypass": 0,
+      "total_duration_ms": 74.76544380187988,
+      "total_requests": 17,
+      "last_run": 1785787213.6151128,
+      "last_success": 0.0,
+      "history": [
+        {
+          "ts": 1785785198.9064703,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 1.91497802734375,
+          "score": 0,
+          "error": ""
+        },
+        {
+          "ts": 1785785679.4569488,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 1.8181800842285156,
+          "score": 0,
+          "error": ""
+        },
+        {
+          "ts": 1785785881.5558996,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 1.5206336975097656,
+          "score": 0,
+          "error": ""
+        },
+        {
+          "ts": 1785787148.0409536,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 32.23919868469238,
+          "score": 0,
+          "error": "模拟: 未找到绕过"
+        },
+        {
+          "ts": 1785787213.6151128,
+          "success": false,
+          "bypass": false,
+          "duration_ms": 37.27245330810547,
+          "score": 0,
+          "error": "模拟: 未找到绕过"
+        }
+      ],
+      "current_weight": 35.4294,
+      "total_score_sum": 0,
+      "best_score": 0,
+      "last_score": 0,
+      "avg_score": 0.0,
+      "consecutive_failures": 1,
+      "consecutive_successes": 0,
+      "tried_in_session": false
+    }
+  }
+}
